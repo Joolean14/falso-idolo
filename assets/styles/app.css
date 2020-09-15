@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+}
+
+.rio {
+    position: absolute;
+    width: 766.8px;
+    height: 697.41px;
+    left: -8%;
+    top: 14%;
+    transform: scaleX(-1);
+}
+
+.logo {
+    position: absolute;
+    width: 239px;
+    left: 839px;
+    top: 72px;
+}
+
+.btn-hoja {
+    position: absolute;
+    width: 3%;
+    left: 94%;
+    top: 45%;
+    transform: rotate(-90deg);
+}
+
+.btn-hoja:hover {
+    width: 3.4%;
+  } 
