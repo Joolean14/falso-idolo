@@ -1,31 +1,96 @@
+@font-face {
+    font-family: daisy wheel;
+    src: url(assets/fonts/daisywhl.otf);
+}
+
+
 body {
     background-color: black;
+    color: white;
+    background-image: url("rio.jpg");
+    
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    background-image: url('img_girl.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .rio {
-    position: absolute;
-    width: 766.8px;
-    height: 697.41px;
-    left: -8%;
-    top: 14%;
+    display: flex;
+    /* position: absolute; */
+    /* left: -6%;
+    top: 12%; */
+    width: 63%;
     transform: scaleX(-1);
+    z-index: -1;
+    border: red solid 2px;
 }
 
 .logo {
-    position: absolute;
-    width: 239px;
-    left: 839px;
-    top: 72px;
+    display: flex;
+    /* position: absolute; */
+    /* left: 71%;
+    top: 12%; */
+    width: 15%;
+    
 }
 
 .btn-hoja {
-    position: absolute;
-    width: 3%;
+    /* display: flex; */
+    position: absolute; 
     left: 94%;
-    top: 45%;
+    top: 45%; 
+    width: 3%;
     transform: rotate(-90deg);
+    border: red solid 2px;
 }
 
 .btn-hoja:hover {
     width: 3.4%;
-  } 
+} 
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+    
+    }
+    
+  
+  
+}
+
+
+@media only screen and (max-width: 720px) {
+   
+  }
+
+  /* .swiper-slide {
+    background-image: url(rio.jpg);  
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+} */
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+
+

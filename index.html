@@ -4,20 +4,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Falso Ídolo | Home</title>
     <script src="https://kit.fontawesome.com/98ca127883.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/styles/app.css">
-    <script src="assets/scripts/app.js" defer></script>
 </head>
 <body>
-    <div id="main-container">
-        <img class="logo" src="assets/images/falso-idolo-logo.jpg" alt="Logo Falso Ídolo">
-        <img class="rio" src="assets/images/rio.jpg" alt="Foto invertida de rio">
-        <img class="btn-hoja swipe-right" src="assets/images/hoja.jpg" alt="Hoja invertida">
-            </div>
-<!-- <div>
-    <i class="fab fa-facebook-f"></i>
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-spotify"></i>
-</div> -->
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <div class="parallax-bg" style="background-image:url(./assets/images/rio.jpg)" data-swiper-parallax="-23%"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+         <div class="swiper-slide">
+            <!-- <img class="rocas" src="assets/images/rio.jpg" alt="Foto invertida de rio"> -->
+            <img class="logo" src="assets/images/falso-idolo-logo.jpg" alt="Logo Falso Ídolo">
+            <a href="https://www.google.com/"><img src="assets/images/artistas.png" alt=""></a>
+            
+            <img src="assets/images/recursos.png" alt="">
+            <img class="btn-hoja swipe-right" src="assets/images/hoja.jpg" alt="Hoja invertida">
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/images/noticias.png" alt="">
+            <img src="assets/images/servicios.jpg" alt="">
+            
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/images/contacto.png" alt="">
+        </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
 
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="assets/scripts/app.js"></script>
+<script src="https://kit.fontawesome.com/98ca127883.js" crossorigin="anonymous"></script>
 </body>
 </html>
