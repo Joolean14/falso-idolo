@@ -1,96 +1,301 @@
-@font-face {
-    font-family: daisy wheel;
-    src: url(assets/fonts/daisywhl.otf);
-}
-
-
 body {
-    background-color: black;
+    font-family: 'DaisyWheel', sans-serif;
     color: white;
-    background-image: url("rio.jpg");
-    
+    background-color: black;
 }
 
-.main-container {
+* {
+  box-sizing: border-box;
+}
+
+.swiper-button-prev {
+    transform: rotate(90deg);
+}
+
+.swiper-button-next {
+    transform: rotate(-90deg);
+}
+
+
+.swiper-slide { 
     display: flex;
     flex-direction: row;
-    background-image: url('img_girl.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    align-items: center;    
+    justify-content: center;
 }
 
-.rio {
-    display: flex;
-    /* position: absolute; */
-    /* left: -6%;
-    top: 12%; */
-    width: 63%;
-    transform: scaleX(-1);
-    z-index: -1;
-    border: red solid 2px;
-}
+.art-button {
+   display: flex;
+   width: 10%;
+} 
 
 .logo {
-    display: flex;
-    /* position: absolute; */
-    /* left: 71%;
-    top: 12%; */
-    width: 15%;
-    
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top:6%;
+    bottom:1%;
+    left:32%;
+    right:1%;
+    opacity: 0.5;
+   
+ }
+
+/* FOLLOW MOUSE */
+
+ #ball {
+    width: 60px;
+    height: 60px;
+    background: none;
+    border: 1px solid grey;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    pointer-events: none;
 }
 
-.btn-hoja {
-    /* display: flex; */
-    position: absolute; 
-    left: 94%;
-    top: 45%; 
-    width: 3%;
-    transform: rotate(-90deg);
-    border: red solid 2px;
+#mascara {
+    width: 100%;
 }
 
-.btn-hoja:hover {
-    width: 3.4%;
+
+/* ANIMATIONS */
+
+.floating-1 {
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+}
+  
+.floating-2 {
+    transform: translatey(0px);
+    animation: float2 6s ease-in infinite;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-15px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(15px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+
+
+  
+
+
+    /* FLOATING BUTTONS */
+
+
+/* SCENE IMG */
+
+.scene-prop-item-a {
+  background-image: url(../images/artistas.png);
+}
+
+.scene-prop-item-b {
+  background-image: url(../images/recursos.png);
+}
+
+.scene-prop-item-c {
+  background-image: url(../images/noticias.png);
+}
+
+.scene-prop-item-d {
+  background-image: url(../images/servicios.jpg);
+}
+
+.scene-prop-item-e {
+  background-image: url(../images/contacto.png);
+}
+
+
+
+
+@media only screen and (min-width: 720px) {
+  
 } 
 
 
-
-
-@media only screen and (max-width: 1200px) {
-
-    .main-container {
-        display: flex;
-        flex-direction: column-reverse;
-    
-    }
-    
+@media only screen and (min-width: 1024px) {
   
   
+  
+  
+  
+  
+}     */
+
+
+/* For desktop: */
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* FLOATING AVATARS */
+
+
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.scene-item {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.scene-item-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  width: 75%;
+  will-change: transform, opacity;
+  text-decoration: none;
+  color: #d2c193 !important;
+  transition: transform 1.5s ease-in-out;
+}
+
+.scene-figure {
+  -webkit-animation: scene-figure 4.2s ease-in-out infinite;
+  animation: scene-figure 4.2s ease-in-out infinite;
+  will-change: transform;
+  pointer-events: none;
+}
+
+.scene-prop {
+  -webkit-animation: scene-prop 2.1s ease-in-out infinite;
+  animation: scene-prop 2.1s ease-in-out infinite;
+  will-change: transform;
+  padding-top: 100%;
+  pointer-events: none;
+}
+
+.scene-prop-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 
-@media only screen and (max-width: 720px) {
-   
-  }
 
-  /* .swiper-slide {
-    background-image: url(rio.jpg);  
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-repeat: no-repeat;
+
+
+
+/* .scene-header {
+  position: absolute;
+  top: 112%;
+  left: 50%;
+  transform: translate(-50%, -2vw) rotate(-15deg) scale(0);
+  -webkit-transform: translate(-50%, -2vw) rotate(-15deg) scale(0);
+  transform-origin: 20% 50%;
+  will-change: transform, opacity;
+  transition: 0.25s ease-in-out;
 } */
 
-.parallax-bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 130%;
-    height: 100%;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-  }
+/* .has-touched .swiper-slide-active .scene-item-container .scene-header,
+.scene-item-container.active .scene-header,
+.scene-item-container:focus .scene-header,
+.scene-item-container:hover .scene-header {
+  transform: translate(-50%, -2vw) rotate(0deg) scale(1);
+  -webkit-transform: translate(-50%, -2vw) rotate(0deg) scale(1);
+} */
+
+.scene-title {
+  text-transform: uppercase;
+  -webkit-transform: uppercase;
+  font-size: 10vw;
+  /* text-shadow: -0.125em 0.125em 0 #01223c; */
+  -webkit-text-stroke: 0.025em #F2B705;
+  text-align: center;
+  line-height: 0.8;
+  pointer-events: none;
+}
+
+/* .scene-item-container:hover .scene-header {
+  transform: translate(-50%, -2vw) rotate(0deg) scale(1);
+  -webkit-transform: translate(-50%, -2vw) rotate(0deg) scale(1);
+} */
 
 
