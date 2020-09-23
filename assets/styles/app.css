@@ -1,7 +1,12 @@
+html {
+  /* background-image: url("../images/rio.jpg"); */
+  background-size: auto;
+  background-color: black;
+}
+
 body {
   font-family: 'DaisyWheel', sans-serif;
-  /* color: white; */
-  background-color: black;
+  
 }
 
 .swiper-button-prev {
@@ -34,13 +39,6 @@ body {
   box-shadow: 5px 1px 14px white;
 }
 
-/* .rio {
-  position: absolute;
-  width: 108%;
-  top: 61%;
-  left: 19%;
-  opacity: 0.5;
-} */
 
 /* FOLLOW MOUSE */
 
@@ -227,19 +225,11 @@ a:hover {
     width: 13%;
     height: auto;
     position: absolute;
-    top: 74%;
+    top: 8%;
     bottom: 1%;
     left: 8%;
     right: 1%;
-      }
-
-  /* .rio {
-    width: 60%;
-    top: 46%;
-    left: 44%;
-  } */
-      
-
+    }  
 }
 
 
@@ -253,7 +243,7 @@ a:hover {
   .logo {
     width: 8%;
     height: auto;
-    top: 72%;
+    top: 8%;
     bottom: 1%;
     left: 6%;
     right: 1%;
