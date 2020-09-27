@@ -211,7 +211,7 @@ a:hover {
 }
 
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 768px) {
 
   .scene-item-container {
     width: 30%;

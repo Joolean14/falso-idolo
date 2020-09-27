@@ -10,89 +10,78 @@
 </head>
 
 <body>
-     <div class="main-container">
-          <div class="title-with-images">
-               <h1>Contacto</h1>
-               <img class='orquidea' src="./assets/images/orquidea.jpg" alt="" />
-               <img class='rana' src="./assets/images/contacto.png" alt="" />
+          <h1>Contacto</h1>
+          <div class="main-container">
+               <div>
+                    <img class='rana-orquidea' src="./assets/images/rana-orquidea.jpg" alt="" />
+               </div>
+     
+               <form id="form" class="form">
+                    <div class="form-item">
+                         <input class="input-text-size" type="text" placeholder=" Nombre*" 1 id="userName" name="nombre" />
+                         <i class="fas fa-check-circle"></i>
+                         <i class="fas fa-exclamation-circle"></i>
+                         <small>Error message</small>
+                    </div>
+                    <div class="form-item">
+                         <input class="input-text-size" type="text" placeholder=" Apellido" id="userLastName"
+                              name="apellido" />
+                         <i class="fas fa-check-circle"></i>
+                         <i class="fas fa-exclamation-circle"></i>
+                         <small>Error message</small>
+                    </div>
+                    <div class="form-item">
+                         <input class="input-text-size" type="email" placeholder=" E-mail*" id="email" name="correo" />
+                         <i class="fas fa-check-circle"></i>
+                         <i class="fas fa-exclamation-circle"></i>
+                         <small>Error message</small>
+                    </div>
+                    <div class="form-item">
+                         <input type="text" class="input-text-size" placeholder=" País" id="country" name="pais" />
+                         <i class="fas fa-check-circle"></i>
+                         <i class="fas fa-exclamation-circle"></i>
+                         <small>Error message</small>
+                    </div>
+                    <div class="form-item">
+                         <textarea class='textarea' rows="3" placeholder=" Mensaje*" class="input-text-size" id="message"
+                              name="mensaje"></textarea>
+                         <i class="fas fa-check-circle"></i>
+                         <i class="fas fa-exclamation-circle"></i>
+                         <small>Error message</small>
+                    </div>
+                    <div class="form-item checkbox-container">
+                         <input class="check" type="checkbox" name="optiona" id="opta" />
+                         <p class="checkbox-text">He leído y acepto: <a class="hover" href="terminos-condiciones.html">Términos &
+                                   condiciones</a>
+                              <a class="hover" href="politicas-privacidad.html">Políticas de privacidad</a></p>
+                         
+                         <i class="fas fa-check-circle"></i>
+                         <i class="fas fa-exclamation-circle"></i>
+                         <small>Error message</small>
+                    </div>
+                    <button class="hover" type="submit"><img id="loading" class='spiral-send'
+                              src="assets/images/espiral.jpg" alt="" /></button>
+               </form>
           </div>
-          
-          <form id="form" class="form">
-               <div class="form-item">
-                    <input style="font-size:3vw;" type="text" placeholder=" Nombre*" 1 id="userName" name="nombre" />
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-               </div>
-               <br />
-               <div class="form-item">
-                    <input style="font-size:3vw;" type="text" placeholder=" Apellido*" id="userLastName"
-                         name="apellido" />
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-               </div>
-               <br />
-               <div class="form-item">
-                    <input style="font-size:3vw;" type="email" placeholder=" E-mail*" id="email" name="correo" />
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-               </div>
-               <br />
-               <div class="form-item">
-                    <input type="text" style="font-size:3vw;" placeholder=" País" id="country" name="pais" />
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-               </div>
-               <br />          
-               <div class="form-item">
-                    <textarea class='textarea' placeholder=" Mensaje" style="font-size:3vw;" id="message"
-                         name="mensaje"></textarea>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-               </div>
-               <br />
-               <span class="form-item he-leido">
-                    <!-- <input class="checkbos" type="checkbox" name="checkbox" value="check" id="agree" />
-                    <p>He leÍdo y acepto los términos y condiciones</p> -->
-                    <input  class="check" type="checkbox" name="optiona" id="opta" checked />
-                    <span class="checkboxtext">
-                         He leÍdo y acepto los términos y condiciones
-                    </span>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-               </span>
-               <button class="hover" type="submit"><img class='espiral-enviar' src="assets/images/espiral.jpg" alt="" /></button>
-               <br />
-          </form>
-          <footer class='footer'>
-               <h2 class="footer-item brand-name">© FALSO ÍDOLO</h2>
-               <div class="footer-item social-icons-container">
-                    <a class="social-icons " href="">
-                         <i class="fab fa-facebook social-icons hover"></i>
-                    </a>
-                    <a class="social-icons" href="">
-                         <i class="fab fa-instagram social-icons hover"></i>
-                    </a>
-                    <a class="social-icons" href="">
-                         <i class="fab fa-youtube social-icons hover"></i>
-                    </a>
-                    <a class="social-icons" href="">
-                         <i class="fab fa-spotify social-icons hover"></i>
-                    </a>
-               </div>
-               <div class="footer-item legal">
-                    <a class="legal-items hover" href="terminos-condiciones.html">Términos & condiciones </a>
-                     | 
-                    <a class="legal-items hover" href="politicas-privacidad.html"> Políticas de privacidad</a>
-               </div>
+     
+     <footer class='footer'>
+          <h2 class="footer-item brand-name">© FALSO ÍDOLO</h2>
+          <div class="footer-item social-icons-container">
+               <a class="social-icons " href="">
+                    <i class="fab fa-facebook social-icons hover"></i>
+               </a>
+               <a class="social-icons" href="">
+                    <i class="fab fa-instagram social-icons hover"></i>
+               </a>
+               <a class="social-icons" href="">
+                    <i class="fab fa-youtube social-icons hover"></i>
+               </a>
+               <a class="social-icons" href="">
+                    <i class="fab fa-spotify social-icons hover"></i>
+               </a>
+          </div>
 
-          </footer>
-
+     </footer>
      <script src="https://kit.fontawesome.com/98ca127883.js" crossorigin="anonymous"></script>
      <script src="assets/scripts/form.js"></script>
 </body>
