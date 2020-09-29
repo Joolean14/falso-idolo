@@ -1,0 +1,10 @@
+a {
+    color: #56A632;
+}
+
+.hover:hover {
+    color: #56A632;
+    border: #56A632;
+}
+
+

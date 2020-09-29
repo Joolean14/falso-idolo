@@ -1,0 +1,24 @@
+.artist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: #D91E1E;
+}
+
+.hover:hover {
+    color: #D91E1E;
+    border: #D91E1E;
+}
+
+.yo-me-lanzo {
+    border: 2px white solid;
+}
+
+.artist-img {
+    display: flex;
+    width: 80%;
+    margin: 4%;
+}

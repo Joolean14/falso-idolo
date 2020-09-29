@@ -1,0 +1,24 @@
+a {
+    color: #F2A444;
+}
+
+.hover:hover {
+    color: #F2A444;
+    border: #F2A444;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+
+    
+    
+}
+
+p {
+    font-size: 3vw;
+}
+

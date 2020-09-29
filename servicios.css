@@ -1,0 +1,47 @@
+a {
+    color: #F20505;
+}
+
+.hover:hover {
+    color: #F20505;
+    border: #F20505;
+}
+
+.services-icon {
+    width: 20%;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 720px) {
+
+    .main-container{
+         flex-direction: column;
+    }
+
+    .services-icon {
+        width: 15%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  
+
+    .main-container {
+         flex-direction: row;
+         flex-wrap: wrap;
+
+    }
+}

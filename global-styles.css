@@ -1,0 +1,128 @@
+body {
+    color:  #f4e5f5;
+    background: black;
+    font-family: 'DaisyWheel', sans-serif;    
+    /* align-items: center; */
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color:  #f4e5f5;
+    margin: 15% 0 0%;
+    font-size: 17vw;     
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+} 
+
+h2 {
+    font-size: 4.7vw; 
+}
+
+.art-button{
+    display: flex;
+    width: 80vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 3vw;
+    display: inline;
+    margin: 3vw 0 20% 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom:0;
+}
+
+
+.footer-item {
+    text-decoration: none;
+    display: flex;  
+    margin: 0;
+}
+
+.social-icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35%;
+    margin: 2vh 0 1vh;
+}
+
+.social-icons {
+    font-size: 3.5vw;
+    color:  #f4e5f5;
+}
+
+@media only screen and (min-width: 720px) {
+
+    .main-container{
+         flex-direction: row;
+         justify-content: space-around;
+    }
+
+    .art-button {
+        width: 55vw;
+        margin-bottom: 8vw; 
+   }
+
+    h1 {
+         margin: 9% 0 0;
+         font-size: 13vw;     
+    }
+
+    h2 {
+         font-size: 2.5vw;
+    }
+
+    footer {
+        flex-direction: column;  
+   }
+
+   .social-icons-container {
+        width: 20vw;
+        justify-content: space-evenly;
+        padding: 0 4vw;
+   }
+
+   .social-icons {
+        font-size: 1.6vw;
+   }
+  
+}
+
+@media only screen and (min-width: 1024px) {
+
+    h1 {
+         font-size: 8vw;
+         margin: 7vh 0 0 0;
+    }
+
+    p {
+         font-size: 4vw;
+    }
+
+    .main-container {
+         width: 100%;
+         align-items: end;
+         justify-content: top;
+
+    }
+
+    .art-button {
+        width: 100%;
+   }
+}
