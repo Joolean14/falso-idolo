@@ -1,6 +1,4 @@
 html {
-  /* background-image: url("../images/rio.jpg"); */
-  background-size: auto;
   background-color: black;
 }
 
@@ -9,12 +7,35 @@ body {
   
 }
 
+.background-container {
+  position: absolute;
+  display: grid;
+  width: 768px;
+  height: 100vh;
+  grid-template-rows: 30% 70%;
+  grid-template-areas: "top" "bottom";
+  /* border: pink 3px solid; */
+  z-index: -1;
+  left: -12%;
+  overflow: hidden;
+}
+
+.background-img {
+  grid-area: bottom;
+  opacity: 0.2;
+  width: 156vw;
+  /* height: 100%; */
+  /* border: blue 10px solid; */
+}
+
 .swiper-button-prev {
   transform: rotate(90deg);
+ 
 }
 
 .swiper-button-next {
   transform: rotate(-90deg);
+ 
 }
 
 .swiper-slide {
@@ -30,17 +51,20 @@ body {
 }
 
 .logo {
-  width: 20%;
+  width: 80px;
   height: auto;
   position: absolute;
   top: 9%;
   left: 13%;
   opacity: 0.7;
-  box-shadow: 5px 1px 14px white;
+  /* box-shadow: 5px 3px 6px rgb(106, 106, 106); */
 }
-
-.swiper-button-next, .swiper-button-prev {
-
+/* .shake:hover {
+  -webkit-animation-name: spaceboots;
+  -webkit-animation-duration: 0.8s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
 }
 
 @-webkit-keyframes spaceboots {
@@ -55,14 +79,7 @@ body {
 	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
 	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
 	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
-}
-.shake:hover {
-	-webkit-animation-name: spaceboots;
-	-webkit-animation-duration: 0.8s;
-	-webkit-transform-origin:50% 50%;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-}
+} */
 
 
 /* ANIMATIONS */
@@ -166,12 +183,47 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
-  width: 57%;
+  width: 65%;
   will-change: transform, opacity;
   text-decoration: none;
   color: #d2c193 !important;
   transition: transform 1.5s ease-in-out;
 }
+
+.cabeza-roja {
+  width: 75%;
+}
+
+/* .cabeza-roja-label {
+  left: 55%;
+} */
+
+.indigena {
+  width: 85%;
+}
+
+/* .indigena-label {
+  top: 104%;
+  left: 52%;
+} */
+
+.guacamaya {
+  width: 80%;
+  left: 54%;
+}
+
+.rana-size {
+  width: 68%;
+}
+
+.rana-label {
+  top: 83%;
+  position: absolute;
+  left: 23%;
+}
+
+
+
 
 .scene-figure {
   -webkit-animation: scene-figure 4.2s ease-in-out infinite;
@@ -199,6 +251,9 @@ a:hover {
   background-position: 50%;
 }
 
+/* .rana-label {
+  top: 20%;
+} */
 
 .scene-title {
   text-transform: uppercase;
@@ -217,36 +272,91 @@ a:hover {
 
 
 @media only screen and (min-width: 768px) {
+  .background-container {
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    grid-template-rows: 20% 80%;
+    left: -8%;
+    width: 110%;
+  }
+  
+  .background-img {
+    
+    opacity: 0.2;
+    width: 142vw;
+    /* height: 100%; */
+    
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    height: 8%;
+    width: 8%;
+  }
+   
 
   .scene-item-container {
-    width: 30%;
+    width: 68%;
   }
 
   .scene-title {  
-    font-size: 5vw;
+    font-size: 10vw;
   }
 
   .logo {
-    width: 13%;
+    width: 20%;
     height: auto;
     position: absolute;
-    top: 8%;
+    top: 5%;
     bottom: 1%;
-    left: 8%;
+    left: 6.5%;
     right: 1%;
+    z-index: 2;
     }  
+
+    .guacamaya {
+      width: 85%;
+    }
+
+    .rana-size {
+      width: 75%;
+    }
+    
 }
 
 
 @media only screen and (min-width: 1024px) {
 
+  /* .background-container {
+       height: 100vh;
+  } */
+
+
+
+
+  .background-container {
+      grid-template-rows: 5% 95%;
+      left: 0%;
+  }
+
+  
+  
+  .background-img {
+    grid-area: bottom;
+    opacity: 0.2;
+    width: 114vw;
+    height: 75vw;
+  }
+
+  
+
   .scene-item-container {
     width: 35%;
-    top: 35%;
+    top: 45%;
   }
 
   .logo {
-    width: 8%;
+    width: 11%;
     height: auto;
     top: 8%;
     bottom: 1%;
@@ -254,6 +364,11 @@ a:hover {
     right: 1%;
   }
 
+  .swiper-button-prev, .swiper-button-next {
+    height: 11%;
+    width: 5.5%;
+  }
+  
   .scene-title {  
     font-size: 5vw;
   }
@@ -282,5 +397,43 @@ a:hover {
     transform: translate(-50%, -2vw) rotate(0deg) scale(1);
     -webkit-transform: translate(-50%, -2vw) rotate(0deg) scale(1);
   }
+
+  .cabeza-roja {
+    width: 38%;
+    top: 51%;
+  }
+  
+  .cabeza-roja-label {
+    left: 55%;
+    top: 106%;
+  }
+
+  .indigena {
+    width: 50%;
+  }
+  
+  .indigena-label {
+  top: 104%;
+  left: 52%;
+}
+  .guacamaya {
+    width: 51%;
+    top: 39%;
+  }
+
+  .guacamaya-label {
+    top: 101%;
+  }
+  
+  .rana-size {
+    width: 50%;
+    top: 55%;
+  }
+
+  .rana-label {
+    top: 83%;
+    /* position: static; */
+  }
+
 
 }

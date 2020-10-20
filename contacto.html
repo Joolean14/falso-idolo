@@ -5,23 +5,19 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Contacto | Falso ídolo</title>
-     <link rel="shortcut icon" href="assets/images/favicon-logo.png" type="image/x-icon">
      <link href="https://fonts.cdnfonts.com/css/daisy-wheel" rel="stylesheet">
-     <link rel="stylesheet" href="global-styles.css">
-     <link rel="stylesheet" href="contacto.css">
+     <link rel="stylesheet" href="contacto.css" />
 </head>
 
 <body>
-          <a href="index.html"><img class="back-btn" src="assets/images/hoja.jpg" alt=""></a>
-          <h1>Contacto</h1>
+     <div class='macro-container'>
+          <h1 class='title'>Contacto</h1>
           <div class="main-container">
-               <div>
-                    <img class='art-button' src="./assets/images/rana.jpg" alt="" />
-               </div>
-     
-               <form id="form" class="form">
+               <img class='rana-orquidea' src="assets/images/rana.jpg" alt="">
+               <form id="formulario" class="form">
                     <div class="form-item">
-                         <input class="input-text-size" type="text" placeholder=" Nombre*" 1 id="userName" name="nombre" />
+                         <input class="input-text-size" type="text" placeholder=" Nombre*" 1 id="userName"
+                              name="nombre" />
                          <i class="fas fa-check-circle"></i>
                          <i class="fas fa-exclamation-circle"></i>
                          <small>Error message</small>
@@ -46,45 +42,54 @@
                          <small>Error message</small>
                     </div>
                     <div class="form-item">
-                         <textarea class='textarea' rows="3" placeholder=" Mensaje*" class="input-text-size" id="message"
-                              name="mensaje"></textarea>
+                         <textarea class='textarea' rows="3" placeholder=" Mensaje*" class="input-text-size"
+                              id="message" name="mensaje"></textarea>
                          <i class="fas fa-check-circle"></i>
                          <i class="fas fa-exclamation-circle"></i>
                          <small>Error message</small>
                     </div>
                     <div class="form-item checkbox-container">
                          <input class="check" type="checkbox" name="optiona" id="opta" />
-                         <p class="checkbox-text">He leído y acepto: <a class="hover" href="terminos-condiciones.html">Términos &
+                         <p>He leído y acepto: <a class="hover" href="terminos-condiciones.html">Términos &
                                    condiciones</a>
                               <a class="hover" href="politicas-privacidad.html">Políticas de privacidad</a></p>
-                         
+
                          <i class="fas fa-check-circle"></i>
                          <i class="fas fa-exclamation-circle"></i>
                          <small>Error message</small>
                     </div>
-                    <button class="hover" type="submit"><img id="loading" class='spiral-send'
-                              src="assets/images/espiral.jpg" alt="" /></button>
+                    <button class="spinning" type="submit">
+                         <img class='spiral-send' src="assets/images/espiral.jpg" alt="" />
+                    </button>
                </form>
-          </div>
-     
-     <footer class='footer'>
-          <h2 class="footer-item brand-name">© FALSO ÍDOLO</h2>
-          <div class="footer-item social-icons-container">
-               <a class="social-icons " href="">
-                    <i class="fab fa-facebook social-icons hover"></i>
-               </a>
-               <a class="social-icons" href="">
-                    <i class="fab fa-instagram social-icons hover"></i>
-               </a>
-               <a class="social-icons" href="">
-                    <i class="fab fa-youtube social-icons hover"></i>
-               </a>
-               <a class="social-icons" href="">
-                    <i class="fab fa-spotify social-icons hover"></i>
-               </a>
-          </div>
 
-     </footer>
+               <div>
+                    <a href='index.html'>
+                         <img class='leaf-back' src="assets/images/hoja.jpg" alt="" />
+                    </a>
+
+               </div>
+
+          </div>
+          <footer class='footer'>
+               <h2 class="footer-item brand-name">© FALSO ÍDOLO</h2>
+               <div class="footer-item social-icons-container">
+                    <a class="social-icons " href="">
+                         <i class="fab fa-facebook social-icons hover"></i>
+                    </a>
+                    <a class="social-icons" href="">
+                         <i class="fab fa-instagram social-icons hover"></i>
+                    </a>
+                    <a class="social-icons" href="">
+                         <i class="fab fa-youtube social-icons hover"></i>
+                    </a>
+                    <a class="social-icons" href="">
+                         <i class="fab fa-spotify social-icons hover"></i>
+                    </a>
+               </div>
+          </footer>
+     </div>
+
      <script src="https://kit.fontawesome.com/98ca127883.js" crossorigin="anonymous"></script>
      <script src="assets/scripts/form.js"></script>
 </body>

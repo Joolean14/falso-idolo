@@ -60,7 +60,7 @@ function checkInputs() {
     }
 
     if (!this.form.checkbox.checked) {
-        setErrorFor(agree, 'Debe aceptar Términos & Condiciones primero');
+        setErrorFor(agree, 'Debe aceptar Términos & Condiciones');
     } else {
         setSuccessFor(agree);
     }
