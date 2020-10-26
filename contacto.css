@@ -11,8 +11,9 @@ body {
 
 .title {
      display: flex;
-     position: absolute;
-     margin-top: 7%;
+     /* position: absolute; */
+     z-index: 1;
+     margin: 6.3% 0 -22% 0;
      /* margin: 0 auto; */
      /* float: top; */
      /* text-align: center; */
@@ -172,9 +173,9 @@ button {
 .spiral-send{
      /* margin: 4vw 0 6vw; */
      border-radius: 50%;
-    /*  border: solid red 2px; */
+     /* border: solid red 2px; */
  
-  width: 100%;
+  width: 95%;
   border-radius: 50%;
   /* padding: 0; */
   /* border: solid red 2px; */
@@ -205,7 +206,7 @@ button {
      width: 6.5%;
      /* height: 2%; */
     /*  border: solid rgb(0, 255, 55) 2px; */
-     transform: rotate(110deg);
+     transform: rotate(100deg);
      cursor: pointer;
      position: absolute;
      margin-left: -38%;
@@ -280,44 +281,45 @@ footer {
      }
 
      .main-container{
+          width: 95%;
           flex-direction: row;
+          /* align-items: center; */
           /* height: 80%; */
-          /* border: solid rgb(0, 255, 55) 2px; */
+         /*  border: solid yellow 2px; */
           /* margin: 0; */
-          /* justify-content: space-around; */
+          justify-content: center;
           
      }
 
      
      .rana-orquidea {
-
           width: 55%;
-          
-          position: absolute;
+          /* position: absolute; */
           z-index: -1;
-          margin-left: 5.5%;
-          top: 8%;
-          bottom: 4%;
+          margin: -11% -6% 0 0;
+          /* margin-left: 6.8%;
+          top: 6%;
+          bottom: 4%; */
           /* margin-bottom: 8vw;  */
      }
 
      .form {
-          width: 40%;
-          margin-left: 50%;
+          width: 30%;
+          margin: -2% 10% 0 0;
+          /* margin-left: 55%; */
           /* margin: 0 3vw 0 0; */
-          /* border: solid rgb(0, 255, 55) 2px;  */   
+          /* border: solid rgb(0, 255, 55) 2px; */    
      }
 
 
 
-     .form input, textarea {
-          
-          line-height: 1.1; 
+     .form input, textarea {  
+          line-height: 1.025; 
      }
 
 
      .form input {
-          width: 25vw
+          width: 24vw
      }
 
     /*  input::placeholder {
@@ -325,7 +327,7 @@ footer {
      } */
      
      .form textarea {
-          width: 35vw;
+          width: 32vw;
           margin-bottom: 0.5vh;
      }
 
@@ -340,15 +342,15 @@ footer {
           
      } */
      .checkbox-container {
-          width: 100%;
-          
+          width: 113%;
+          /* border: red solid 3px */ 
      }
 
      .checkbox-container p {
           font-size: 1.7vw;
           line-height: 1.2;
-          /* margin-top: 3vh;
-          border: red solid 3px */;   
+          /* margin-top: 3vh; */
+          /* border: red solid 3px  */  
      } 
 
      button {
@@ -359,32 +361,25 @@ footer {
           width: 40%;
      } */
 
-     .leaf-back {
-          /* width: 1vw;
-          height: 2%; */
-          /* border: solid rgb(0, 255, 55) 2px; */
-          width: 3.8%;
-          margin-left: -80%;
-          padding:  0 0 28.5% 0;
-         /*  padding: 0;
-          margin: 0;
-          left: 20%;
-          bottom: -7%; */
+     footer { 
+          flex-direction: row;  
+          width: 50vw;  
+          margin: -1% 0vw 0vh 0%;
+          /* border: red solid 3px; */
      }
 
-     footer {
-          /* position: absolute; */
-          z-index: 1;
-          flex-direction: row;  
-          justify-content: center;
-          /* border: green solid 3px; */
-          width: 46%;  
-          /* bottom: auto;
-          right: auto; */
-          /* margin-bottom: 3%; */
-          top: 67%;
-          /* margin-left: 1%; */
-          margin: 0 0 2% 2%;
+     .leaf-back {
+          width: 3.6vw;
+          margin: -1% 3vw 0 0;
+     }
+
+     .footer-portion {
+          width: 40vw;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 0;
+          /* border: blue solid 3px; */
      }
 
      .brand-name {
@@ -394,8 +389,7 @@ footer {
      .social-icons-container {
           width: 20vw;
           justify-content: space-evenly;
-          /* border: red solid 3px; */
-          /* padding: 0 4vw; */
+          padding: 2% 0 0;
      }
 
      .social-icons {

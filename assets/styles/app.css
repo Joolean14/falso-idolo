@@ -1,6 +1,7 @@
 html {
   background-color: black;
   overflow: hidden;
+
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 .background-container {
   position: absolute;
   display: grid;
-  width: 768px;
+  width: 110%;
   height: 100vh;
   grid-template-rows: 30% 70%;
   grid-template-areas: "top" "bottom";
@@ -25,6 +26,7 @@ body {
   grid-area: bottom;
   opacity: 0.2;
   width: 156vw;
+  overflow: hidden;
   /* height: 100%; */
   /* border: blue 10px solid; */
   
