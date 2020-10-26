@@ -1,10 +1,11 @@
 html {
   background-color: black;
+  overflow: hidden;
 }
 
 body {
   font-family: 'DaisyWheel', sans-serif;
-  
+    
 }
 
 .background-container {
@@ -26,6 +27,7 @@ body {
   width: 156vw;
   /* height: 100%; */
   /* border: blue 10px solid; */
+  
 }
 
 .swiper-button-prev {
@@ -400,29 +402,29 @@ a:hover {
 
   .cabeza-roja {
     width: 38%;
-    top: 51%;
+    top: 48%;
   }
   
   .cabeza-roja-label {
     left: 55%;
-    top: 106%;
+    top: 103%;
   }
 
   .indigena {
-    width: 50%;
+    width: 45%;
   }
   
   .indigena-label {
-  top: 104%;
+  top: 98%;
   left: 52%;
 }
   .guacamaya {
-    width: 51%;
+    width: 43%;
     top: 39%;
   }
 
   .guacamaya-label {
-    top: 101%;
+    top: 99%;
   }
   
   .rana-size {
@@ -433,6 +435,9 @@ a:hover {
   .rana-label {
     top: 83%;
     /* position: static; */
+  }
+  .servicios-label{
+    top: 108%;
   }
 
 
