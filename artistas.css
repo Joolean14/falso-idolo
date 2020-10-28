@@ -1,24 +1,307 @@
-.artist-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body {
+     color:  #fde8e8;
+     /* text-shadow: 2px 2px rgb(107, 14, 14); */
+     background: black;
+     font-family: 'DaisyWheel', sans-serif;    
+     align-items: center;
+     margin: 0%;
+     /* border: solid 2px yellow; */      
 }
 
-a {
-    color: #D91E1E;
+p {
+     /* justify-content: center; */
+     font-size: 5.3vw;
+     text-align: center;
+     /* text-shadow: 2px 2px rgb(20, 107, 110); */
+     margin: 0;
+     padding: 2% 3% 1%;
+     border-bottom: solid 1px rgb(61, 77, 77);
+     border-radius: 15%;
 }
 
-.hover:hover {
-    color: #D91E1E;
-    border: #D91E1E;
+.title {
+     /* display: flex; */
+     /* padding: 12% 0 0 0; */
+     /* justify-content: center; */
+     /* position: absolute; */
+     /* margin-top: 6.3%; */
+     /* text-align: center; */
+     /* color:  #f4e5f5;   */ 
+     /* text-shadow: white; */
+     font-size: 17.5vw;     
+    /*  border: solid 2px yellow; */
+     margin: 15% 0 0 13%;
 }
 
-.yo-me-lanzo {
-    border: 2px white solid;
+.main-container{
+     /* margin-top: 8%; */
+     display: flex;
+     /* justify-content: center; */
+     align-items: center;
+     flex-direction: column;   
+     /* max-height: 100%; */ 
+     max-width: 100%;
+     /* border: solid 5px yellow;  */
 }
 
-.artist-img {
-    display: flex;
-    width: 80%;
-    margin: 4%;
+.cabeza-roja {
+     margin: -10% 4% 12% 0;
+     width:73%;
+     z-index: -1;
+     /* border: solid 2px yellow; */
+}
+
+/* .servicios-container {
+     border: solid 2px red; 
+} */
+
+.servicio-container {
+     display: flex;
+     flex-direction: column; 
+     align-items: center;
+     /* border: solid 2px yellow;  */
+}
+
+
+.artista1 {
+     width: 55%;
+     transform: rotate(-10deg);
+     /* margin: 7% 0 -9% 12.5%;  */
+     /* border: solid 2px yellow;  */
+    /*  padding: 0; */
+}
+
+
+.artista2 {
+     width:54%;
+     margin: -8% 0 0% 0;
+     transform: rotate(8deg);
+      
+}
+
+.artista3 {
+     width:55%;
+     transform: rotate(-10deg);
+     margin: -8% 0% 0% 0%;
+     border: solid 2px rgb(53, 27, 27);
+}
+
+.artista4 {
+     width:55%;
+    /*  height: 30%; */
+     margin: -12% 0 0 0;
+     transform: rotate(8deg);
+}
+
+.artista5 {
+     width:55%;
+    /*  height: 30%; */
+     margin: -7% 0 0 0;
+     transform: rotate(-6deg);
+     z-index: -1;
+}
+
+footer {
+     display: flex;
+     flex-direction: row;
+     /* align-items: center; */
+     /* border: solid white 2px; */
+     /* justify-content: center; */
+     margin: 9vh 0 2vh;
+}
+
+.leaf-back {
+     width: 6.5vw;
+     /* height: 2%; */
+     /* border: solid rgb(0, 255, 55) 2px; */
+     transform: rotate(100deg);
+     cursor: pointer;
+     margin: -1vh 10vw 0 13vw;
+     /* position: absolute; */
+     /* margin-left: -46%;
+     padding:  0 3.5% 0 18%;  */   
+     /* margin:0; */
+     /* top: 101.5%; */
+     /* bottom: -7.5%; */
+}
+
+.footer-portion {
+     /* border: solid yellow 2px; */
+     width: 40vw;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0;
+}
+
+.footer-item {
+     text-decoration: none;
+     display: flex;  
+     /* width: 100%; */
+     margin: 0;
+     /* text-align: center; */
+     /* padding: 0 2.5%; */
+     /* border: solid red 2px; */
+}
+
+.social-icons-container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     width: 72%;
+     margin: 1% 0 2.5%;
+     /* border: solid yellow 2px; */
+}
+
+.brand-name {
+     font-size: 4.7vw; 
+}
+
+.social-icons {
+     font-size: 3vw;
+     color: inherit;
+     /* border: solid rgb(0, 255, 55) 2px; */
+}
+
+.social-icons:hover{
+     color: #f71e1e;
+     border: #f82a2a;
+}
+
+@media only screen and (min-width: 1024px) {
+    
+     p {
+          font-size: 2vw;
+          border-bottom: none;
+
+     }
+
+     .title {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          /* align-items: center; */
+          margin: 3% 0 0;
+          font-size: 13vw;      
+     }
+
+     .main-container {
+          margin: 0 0 0 2.5%;
+          flex-direction: row;
+          width: 100%;   
+          /* align-items: center; */
+          justify-content: center;
+         /*  border: solid blue 5px;  */   
+     }
+
+     .cabeza-roja {
+          margin: -6% -5% 0 0;
+          width: 45%;
+          /* position: absolute; */
+          z-index:-1;
+          /* top: -22vh;
+          left: 9.5%; */
+          /* border: solid white 2px;  */
+     }
+
+     .servicios-container {
+          width: 45%; 
+          margin: 2% 5% 0% 0%;
+          display: flex;
+          flex-direction: row;
+          flex-flow: wrap;
+         /*  border: solid 2px yellow;  */
+     }
+
+     .servicio-container {
+          display: flex;
+          flex-direction: column; 
+          align-items: center;
+          width: 47%;
+          
+     }
+     .artista1 {
+          width:70%;
+          margin: 5% 0 0% 40%;
+          transform: rotate(-20deg);
+          /* border: solid 2px yellow;  */
+          /* padding: 0; */
+          /* solo */
+     }
+     
+     
+     .artista2 {
+          width:90%;
+          margin: 0% 0 0% -15%;
+          /* border: solid 2px yellow;  */
+          /* mucama */
+     }
+
+     .art2-flex-item {
+          order: 1;
+     }
+       
+     .artista3 {
+          width:67%;
+          margin: -120% 0% 0% 100%;
+          z-index:1;
+          /* border: solid 2px yellow;  */
+          /* yo me */
+     }
+    
+     
+     .artista4 {
+          width:75%;
+          /* max-height: 30vh; */
+          margin: -12% 0 -3% 20%;
+          z-index:2
+          /* sñr naranjo */
+     }
+
+     .artista5 {
+          width:85%;
+          /* max-height: 30vh; */
+          margin: -15% 25% 0 0%;
+          transform: rotate(-10deg);
+          /* evvv */
+     }
+
+
+
+
+
+     
+
+     footer { 
+          flex-direction: row;  
+          width: 50vw;  
+          margin: 1.9vh 0vw 0vh 29.5vw;
+     }
+
+     .leaf-back {
+          width: 3.6vw;
+          margin: 0 3vw 0 0;
+     }
+
+     .footer-portion {
+          width: 40vw;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 0;
+     }
+
+     .brand-name {
+          font-size: 2.5vw;
+     }
+
+     .social-icons-container {
+          width: 20vw;
+          justify-content: space-evenly;
+          padding: 2% 0 0;
+     }
+
+     .social-icons {
+          font-size: 1.6vw;
+     }
 }
