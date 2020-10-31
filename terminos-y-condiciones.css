@@ -1,0 +1,169 @@
+body {
+     color:  #f4e5f5;
+     background: black;
+     font-family: 'DaisyWheel', sans-serif;    
+     align-items: center;
+     margin: 0%;    
+}
+
+p {
+     font-size: 5.3vw;
+     text-align: start;
+     margin: auto;
+     padding: 2% 3% 1%;
+}
+
+.title {
+     font-size: 13.5vw;     
+     margin: 15% 0 0 12.5%;
+}
+
+.main-container{
+     display: flex;
+     align-items: center;
+     flex-direction: column;   
+     max-width: 100%;
+}
+
+.main-image {
+     transform: rotate(200deg);
+     margin: 3% 0 5% 0;
+     width:75%;
+     z-index:-1;
+}
+
+.legal-container {
+     width: 76.5%;
+     height: 40vh;
+     padding: 2.5% 0 2.5% 10%;
+     border-radius: 20%;
+     border-bottom: solid 1px rgb(74, 61, 77);
+     border-top: solid 1px rgb(76, 61, 77);
+     overflow: scroll;
+}
+
+footer {
+     display: flex;
+     flex-direction: row;
+     margin: 6vh 0 2vh;
+}
+
+.leaf-back {
+     width: 6.5vw;
+     transform: rotate(100deg);
+     cursor: pointer;
+     margin: -1vh 10vw 0 13vw;
+}
+
+.footer-portion {
+     width: 40vw;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0;
+}
+
+.footer-item {
+     text-decoration: none;
+     display: flex;  
+     margin: 0;
+}
+
+.social-icons-container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     width: 72%;
+     margin: 1% 0 2.5%;
+}
+
+.brand-name {
+     font-size: 4.7vw; 
+}
+
+.social-icons {
+     font-size: 3vw;
+     color: inherit;
+}
+
+.social-icons:hover{
+     color: #BF65A7;
+     border: #BF65A7;
+}
+
+@media only screen and (min-width: 800px) {
+    
+     p {
+          font-size: 2vw;
+          border-bottom: none;
+     }
+
+     .title {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          margin: 5% 0 0 0%;
+          font-size: 10.8vw;      
+     }
+
+     .custom-title {
+          margin: 9% 0 1.5% -31%;
+     }
+
+     .main-container {
+          margin: 0 0 0 0%;
+          flex-direction: row;
+          width: 100%;   
+          justify-content: center;
+     }
+
+     .main-image {
+          margin: -7% 1% 0% 0%;
+          width: 55%;
+          transform: rotate(-125deg);
+          z-index:-1;
+     }
+
+     .legal-container {
+          width: 45%;
+          height: 50vh;
+          margin: 0% 5.5% 0 -12%;
+          padding: 1% 0.1% 1% 1.5%;
+          border-radius: 5%;
+          border: 0;
+          border-right: solid 1px rgb(75, 61, 77);
+     }
+
+     footer { 
+          flex-direction: row;  
+          width: 55vw;  
+          margin: 3% 0vw 0% 28vw;
+     }
+
+     .leaf-back {
+          width: 3.6vw;
+          margin: 0 3vw 0 0;
+     }
+
+     .footer-portion {
+          width: 40vw;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 0;
+     }
+
+     .brand-name {
+          font-size: 2.5vw;
+     }
+
+     .social-icons-container {
+          width: 20vw;
+          justify-content: space-evenly;
+          padding: 2% 0 0;
+     }
+
+     .social-icons {
+          font-size: 1.6vw;
+     }
+}
