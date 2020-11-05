@@ -14,8 +14,9 @@ p {
 }
 
 .title {
-     font-size: 13.5vw;     
-     margin: 15% 0 0 12.5%;
+     font-size: 13vw;  
+     text-align: center;   
+     margin: 15% 0 0 0%;
      /* border: red 2px solid; */
 }
 
@@ -28,9 +29,9 @@ p {
 }
 
 .main-image {
-     transform: rotate(200deg);
-     margin: 3% 0 5% 0;
-     width:68%;
+     /* transform: rotate(200deg); */
+     margin: 5% 0 5% 0;
+     width:60%;
      z-index:-1;
 }
 
@@ -47,7 +48,7 @@ p {
 footer {
      display: flex;
      flex-direction: row;
-     margin: 6vh 0 2vh;
+     margin: 5vh 0 2vh;
 }
 
 .leaf-back {
@@ -110,7 +111,7 @@ footer {
      }
 
      .custom-title {
-          margin: 5.5% 0 2% -4.5%;
+          margin: 5.5% 0 2% -8%;
           /* border: blue 2px solid; */
      }
 
@@ -122,16 +123,16 @@ footer {
      }
 
      .main-image {
-          margin: -5% -6% 0% 0%;
-          width: 39%;
-          transform: rotate(-125deg);
+          margin: -5% 3% 0% 0%;
+          width: 27%;
+          /* transform: rotate(-125deg); */
           z-index:-1;
      }
 
      .legal-container {
           width: 37%;
           height: 43.7vh;
-          margin: -1.5% -2% 0 0%;
+          margin: -1.5% -6% 0 0%;
           padding: 1% 0.1% 1% 1.5%;
           border-radius: 5%;
           border: 0;
@@ -141,7 +142,7 @@ footer {
      footer { 
           flex-direction: row;  
           width: 52vw;  
-          margin: 8vh 0vw 0% 28vw;
+          margin: 5vh 0vw 0% 28vw;
      }
 
      .leaf-back {
