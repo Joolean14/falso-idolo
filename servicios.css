@@ -161,8 +161,10 @@ footer {
 @media only screen and (min-width: 1024px) {
     
      p {
-          font-size: 2vw;
+          font-size: 1.5vw;
+          /* width: 100%; */
           border-bottom: none;
+          /* border: solid 2px yellow; */ 
 
      }
 
@@ -171,17 +173,17 @@ footer {
           display: flex;
           justify-content: center;
           /* align-items: center; */
-          margin: 3% 0 0;
-          font-size: 13vw;      
+          margin: 5% 0 0;
+          font-size: 11.5vw;      
      }
 
      .main-container {
-          margin: 0 0 0 2.5%;
+          margin: 0 auto;
           flex-direction: row;
-          width: 100%;   
+          width: 80%;   
           /* align-items: center; */
           justify-content: center;
-          /* border: solid blue 5px;   */  
+          /* border: solid blue 5px;  */   
      }
 
      .atom {
@@ -207,44 +209,50 @@ footer {
           flex-direction: column; 
           align-items: center;
           width: 47%;
+          /* border: solid 2px yellow;  */
           
      }
      .jaguar {
-          width:29vw;
-          /* margin: 7% 0 -9% 12.5%; */
+          width:24vw;
+          margin: 11% -19% -12% 0%;
           /* border: solid 2px yellow;  */
           /* padding: 0; */
      }
      
      .serv-cnt-jaguar {
-          margin: 4% -7% 0 5%;
-         /*  border: solid 0.01px yellow; */
+          margin: 2.7% -7% 0% 7%;
+          /* border: solid 0.01px yellow; */
      } 
      
      .boa {
-          width:20vw;
-          margin: -3% 0 0% 12%;
+          width:15vw;
+          margin: -6% 0 0% 12%;
           /* border: solid 2px yellow;  */
      }
 
      .boa-flex-item {
           order: 1;
-          margin: -3vh;
+          /* margin: -3vh; */
      }
        
      .guacamaya {
-          width:25vw;
-          margin: -17% 0% -6% 1%;
+          width:20vw;
+          margin: -17% 0% -6% 10%;
           /* border: solid 2px yellow;  */
+
+     }
+
+    .gcmys-text {
+          margin: 0 -30% 0% 0%;
      }
      .guacamaya-flex-item {
           order: 1;
      }
      
      .oso {
-          width:12vw;
+          width:9vw;
           /* max-height: 30vh; */
-          margin: -15% 0 -3%;
+          margin: -10% 0 -3%;
      }
 
 
@@ -261,7 +269,7 @@ footer {
      }
 
      .leaf-back {
-          width: 3.6vw;
+          width: 2.2vw;
           margin: 0 3vw 0 0;
      }
 
@@ -274,7 +282,7 @@ footer {
      }
 
      .brand-name {
-          font-size: 2.5vw;
+          font-size: 1.8vw;
      }
 
      .social-icons-container {
@@ -284,6 +292,6 @@ footer {
      }
 
      .social-icons {
-          font-size: 1.6vw;
+          font-size: 1.25vw;
      }
 }

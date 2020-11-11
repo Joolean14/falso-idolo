@@ -177,25 +177,25 @@ footer {
      }
 
      .title {
-          position: relative;
+         /*  position: relative; */
           display: flex;
           justify-content: center;
           /* align-items: center; */
-          margin: 3% 0 0;
-          font-size: 13vw;      
+          margin: 5% 0 -2% 0;
+          font-size: 11.5vw;      
      }
 
      .main-container {
-          margin: 0 0 0 2.5%;
+          margin: 0 auto;
           flex-direction: row;
-          width: 100%;   
+          width: 86%;   
           /* align-items: center; */
           justify-content: center;
-         /*  border: solid blue 5px;  */   
+          /* border: solid blue 5px;   */  
      }
 
      .cabeza-roja {
-          margin: -6% -5% 0 0;
+          margin: -6% -6% 0 0;
           width: 45%;
           /* position: absolute; */
           z-index:-1;
@@ -205,8 +205,8 @@ footer {
      }
 
      .servicios-container {
-          width: 45%; 
-          margin: 2% 5% 0% 0%;
+          width: 40%; 
+          margin: 2% 1% 0% -1%;
           display: flex;
           flex-direction: row;
           flex-flow: wrap;
@@ -221,7 +221,7 @@ footer {
           
      }
      .artista1 {
-          width:70%;
+          width:75%;
           margin: 5% 0 0% 40%;
           transform: rotate(-20deg);
           /* border: solid 2px yellow;  */
@@ -242,7 +242,7 @@ footer {
      }
        
      .artista3 {
-          width:67%;
+          width:70%;
           margin: -120% 0% 0% 100%;
           z-index:1;
           /* border: solid 2px yellow;  */
@@ -253,7 +253,7 @@ footer {
      .artista4 {
           width:75%;
           /* max-height: 30vh; */
-          margin: -12% 0 -3% 20%;
+          margin: -2% -9% -3% 20%;
           z-index:2
           /* sñr naranjo */
      }
@@ -261,7 +261,7 @@ footer {
      .artista5 {
           width:85%;
           /* max-height: 30vh; */
-          margin: -15% 25% 0 0%;
+          margin: -15% 25% 0 -2%;
           transform: rotate(-10deg);
           /* evvv */
      }
@@ -275,11 +275,11 @@ footer {
      footer { 
           flex-direction: row;  
           width: 50vw;  
-          margin: 1.9vh 0vw 0vh 29.5vw;
+          margin: 1vh 0vw 0vh 29.5vw;
      }
 
      .leaf-back {
-          width: 3.6vw;
+          width: 2.2vw;
           margin: 0 3vw 0 0;
      }
 
@@ -292,7 +292,7 @@ footer {
      }
 
      .brand-name {
-          font-size: 2.5vw;
+          font-size: 1.8vw;
      }
 
      .social-icons-container {
@@ -302,6 +302,6 @@ footer {
      }
 
      .social-icons {
-          font-size: 1.6vw;
+          font-size: 1.25vw;
      }
 }

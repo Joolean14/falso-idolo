@@ -171,18 +171,15 @@ button {
 }
 
 .spiral-send{
-     /* margin: 4vw 0 6vw; */
      border-radius: 50%;
-     /* border: solid red 2px; */
- 
-  width: 95%;
-  border-radius: 50%;
-  /* padding: 0; */
-  /* border: solid red 2px; */
+     width: 95%;
+     border-radius: 50%;
+  
 }
 
 .spinning {
      -webkit-animation: rotation 2s infinite linear;
+     animation: none; 
 }
 @-webkit-keyframes rotation {
      from {
@@ -203,14 +200,13 @@ button {
 } */
 
 .leaf-back {
-     width: 6.5%;
+     width: 6.5vw;
      /* height: 2%; */
     /*  border: solid rgb(0, 255, 55) 2px; */
      transform: rotate(100deg);
      cursor: pointer;
-     position: absolute;
-     margin-left: -38%;
-     padding:  0 3.5% 0 0;
+     /* position: absolute; */
+     margin: 0vh 67vw -13% 0vw;
      
      /* top: 101.5%; */
      /* bottom: -7.5%; */
@@ -219,15 +215,11 @@ button {
 footer {
      display: flex;
      flex-direction: column;
-    /*  flex-wrap: wrap; */
-     /* font-family: 'DaisyWheel', sans-serif; */  
      align-items: center;
-     /* border: solid white 2px; */
-     justify-content: space-between;
-     /* position: relative; */
-     /* bottom:0; */
+     /* justify-content: space-between; */
      margin-bottom: 3%;
 }
+
 
 
 .footer-item {
@@ -263,10 +255,10 @@ footer {
 @media only screen and (min-width: 1024px) {
    
      .title {
-          position: static;
-          margin: 2% 0 1.5%;
+         /*  position: static; */
+          margin: 4% 0 1.5%;
           /* text-shadow: white; */
-          font-size: 13vw;      
+          font-size: 11.5vw;      
      }
 
      .macro-container {
@@ -293,10 +285,10 @@ footer {
 
      
      .rana-orquidea {
-          width: 55%;
+          width: 46.5%;
           /* position: absolute; */
           z-index: -1;
-          margin: -11% -6% 0 0;
+          margin: -12.5% 0% 0 0;
           /* margin-left: 6.8%;
           top: 6%;
           bottom: 4%; */
@@ -304,37 +296,38 @@ footer {
      }
 
      .form {
-          width: 30%;
-          margin: -2% 10% 0 0;
+          width: 35%;
+          margin: -2% 0% 0 -12.5%;
           /* margin-left: 55%; */
           /* margin: 0 3vw 0 0; */
-          /* border: solid rgb(0, 255, 55) 2px; */    
+          /* border: solid rgb(0, 255, 55) 2px;  */   
      }
 
 
 
      .form input, textarea {  
-          line-height: 1.025; 
+          line-height: 0.5; 
      }
 
 
      .form input {
-          width: 24vw
+          width: 16vw
      }
 
-    /*  input::placeholder {
-          font-size:
-     } */
+     input::placeholder, textarea::placeholder {
+          font-size: 60%; 
+     }
      
      .form textarea {
-          width: 32vw;
+          width: 22vw;
           margin-bottom: 0.5vh;
+          padding: 5% 0 0 0;
      }
 
      input.check {
-          width : 1.6vw;
-          height : 1.6vw;
-          margin: 0 1vw;
+          width : 1vw;
+          height : 1vw;
+          margin: 0% 1vw 0;
      }
 
     /*  input + p {
@@ -342,12 +335,12 @@ footer {
           
      } */
      .checkbox-container {
-          width: 113%;
-          /* border: red solid 3px */ 
+          width: 105%;
+          /* border: red solid 3px  */
      }
 
      .checkbox-container p {
-          font-size: 1.7vw;
+          font-size: 1.4vw;
           line-height: 1.2;
           /* margin-top: 3vh; */
           /* border: red solid 3px  */  
@@ -357,20 +350,23 @@ footer {
           margin: 3% 0 0;
           /* border: red solid 3px; */
      }
-     /* .spiral-send{         
-          width: 40%;
-     } */
+     .spiral-send{         
+          width: 70%;
+     }
+
 
      footer { 
+          display: flex;
           flex-direction: row;  
-          width: 50vw;  
-          margin: 0.5% 0vw 0vh 0%;
-         /*  border: red solid 3px; */
+          width: 52vw;  
+          margin: -1.5% 0vw 0% 11vw;
+          /* border: red 2px solid; */
      }
 
      .leaf-back {
-          width: 3.6vw;
-          margin: -1.2% 3vw 0 0;
+          width: 2.2vw;
+          margin: -8.5% 0% 0 0;
+          /* border: yellow 2px solid; */
      }
 
      .footer-portion {
@@ -378,25 +374,26 @@ footer {
           display: flex;
           flex-direction: row;
           align-items: center;
-          margin: 0;
-          /* border: blue solid 3px; */
+          margin: -0.3% 0 0 5.7%;
+          /* border: blue 2px solid; */
      }
 
      .brand-name {
-          width: 48%;
-          font-size: 2.5vw;
-          margin: 0 -11.5% 0 -3%;
-          /* border: blue solid 3px; */
+          font-size: 1.8vw;
+          margin: 0 0 0 0%;
+         /*  border: red 2px solid; */
      }
 
      .social-icons-container {
           width: 20vw;
           justify-content: space-evenly;
           padding: 2% 0 0;
+          margin: -1% 0 0 0%;
+          /* border: green 2px solid; */
      }
 
      .social-icons {
-          font-size: 1.6vw;
+          font-size: 1.25vw;
      }
     
 }
