@@ -191,6 +191,7 @@ button {
 
 .spinning:hover {
      -webkit-animation: rotation2 2s infinite linear;
+     /* width: 23%; */
 }
 
 @-webkit-keyframes rotation {
