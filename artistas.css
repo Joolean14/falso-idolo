@@ -169,18 +169,34 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) {
+     p {
+          font-size: 2vw;
+          border-bottom: none;
+     }
+
+     .title {
+          display: flex;
+          justify-content: center;
+          margin: 5% 0 -2% 0;
+          font-size: 11.5vw;      
+     }
+
+}
+
+
+
+
+
+/* @media only screen and (min-width: 1024px) {
     
      p {
           font-size: 2vw;
           border-bottom: none;
-
      }
 
      .title {
-         /*  position: relative; */
           display: flex;
           justify-content: center;
-          /* align-items: center; */
           margin: 5% 0 -2% 0;
           font-size: 11.5vw;      
      }
@@ -189,19 +205,13 @@ footer {
           margin: 0 auto;
           flex-direction: row;
           width: 86%;   
-          /* align-items: center; */
           justify-content: center;
-          /* border: solid blue 5px;   */  
      }
 
      .cabeza-roja {
           margin: -6% -6% 0 0;
           width: 45%;
-          /* position: absolute; */
           z-index:-1;
-          /* top: -22vh;
-          left: 9.5%; */
-          /* border: solid white 2px;  */
      }
 
      .servicios-container {
@@ -210,7 +220,6 @@ footer {
           display: flex;
           flex-direction: row;
           flex-flow: wrap;
-         /*  border: solid 2px yellow;  */
      }
 
      .servicio-container {
@@ -218,23 +227,16 @@ footer {
           flex-direction: column; 
           align-items: center;
           width: 47%;
-          
      }
      .artista1 {
           width:75%;
           margin: 5% 0 0% 40%;
           transform: rotate(-20deg);
-          /* border: solid 2px yellow;  */
-          /* padding: 0; */
-          /* solo */
      }
-     
-     
+       
      .artista2 {
           width:90%;
-          margin: 0% 0 0% -15%;
-          /* border: solid 2px yellow;  */
-          /* mucama */
+          margin: 0% 0 0% -15%;     
      }
 
      .art2-flex-item {
@@ -244,33 +246,22 @@ footer {
      .artista3 {
           width:70%;
           margin: -120% 0% 0% 100%;
-          z-index:1;
-          /* border: solid 2px yellow;  */
-          /* yo me */
+          z-index:1;     
      }
     
-     
      .artista4 {
           width:75%;
-          /* max-height: 30vh; */
           margin: -2% -9% -3% 20%;
           z-index:2
-          /* sñr naranjo */
+          
      }
 
      .artista5 {
           width:85%;
-          /* max-height: 30vh; */
           margin: -15% 25% 0 -2%;
           transform: rotate(-10deg);
-          /* evvv */
+          
      }
-
-
-
-
-
-     
 
      footer { 
           flex-direction: row;  
@@ -304,4 +295,4 @@ footer {
      .social-icons {
           font-size: 1.25vw;
      }
-}
+} */
