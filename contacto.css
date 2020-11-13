@@ -77,6 +77,14 @@ input, textarea {
     /*  border: blue solid 2px  */
 }
 
+.form-control.success input {
+     border-color: #2ecc71;
+ }
+ 
+ .form-control.error input {
+     border-color: #e74c3c;
+ }
+
 .form input, textarea{
      width: 45vw;
      line-height: 1.6; 
@@ -180,12 +188,27 @@ button {
 .spinning {
      -webkit-animation: rotation 2s infinite linear;
 }
+
+.spinning:hover {
+     -webkit-animation: rotation2 2s infinite linear;
+     /* width: 23%; */
+}
+
 @-webkit-keyframes rotation {
      from {
                -webkit-transform: rotate(0deg);
      }
      to {
                -webkit-transform: rotate(359deg);
+     }
+}
+
+@-webkit-keyframes rotation2 {
+     from {
+               -webkit-transform: rotate(0deg);
+     }
+     to {
+               -webkit-transform: rotate(-359deg);
      }
 }
 

@@ -32,11 +32,11 @@ function checkInputs() {
         setSuccessFor(userName);
     }
 
-    if (userLastNameValue === '') {
-        setErrorFor(userLastName, 'Apellido no puede estar vacío');
-    } else {
-        setSuccessFor(userLastName);
-    }
+    // if (userLastNameValue === '') {
+    //     setErrorFor(userLastName, 'Apellido no puede estar vacío');
+    // } else {
+    //     setSuccessFor(userLastName);
+    // }
 
 
     if (emailValue === '') {
@@ -47,11 +47,11 @@ function checkInputs() {
         setSuccessFor(email);
     }
 
-    if (countryValue === '') {
-        setErrorFor(country, 'País no puede estar vacío');
-    } else {
-        setSuccessFor(country);
-    }
+    // if (countryValue === '') {
+    //     setErrorFor(country, 'País no puede estar vacío');
+    // } else {
+    //     setSuccessFor(country);
+    // }
 
     if (messageValue === '') {
         setErrorFor(message, 'Mensaje no puede estar vacío');

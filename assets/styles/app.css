@@ -36,14 +36,14 @@ body {
   animation: shake 1s linear 2s;
 }
 
-.swiper-button-prev {
+/* .swiper-button-prev {
   transform: rotate(90deg);
  
 }
 
 .swiper-button-next {
   transform: rotate(-90deg);
-}
+} */
 
 .swiper-slide {
   display: flex;
