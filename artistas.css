@@ -50,7 +50,7 @@ p {
 .main-container::after {
      content: "";
      background-image: url(./assets/images/flor.jpg);
-     background-position: left;
+     background-position: center;
      background-size: 54%;
      opacity: 0.15;
      top: 0;
@@ -86,7 +86,7 @@ p {
 }
 
 .yml {
-     border: solid 0.1px  #44402d;
+     border: solid 0.1px  #201e14;
 }
 
 
@@ -203,7 +203,7 @@ footer {
            overflow: scroll; 
            /* justify-content: center; */
            align-items: center; 
-           border-radius: 15px;
+        /*    border-radius: 15px; */
            margin: -1% 0 0;
           /* border: red solid 2px; */
      }
