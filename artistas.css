@@ -15,7 +15,7 @@ p {
      /* text-shadow: 2px 2px rgb(20, 107, 110); */
      margin: 0;
      padding: 2% 3% 1%;
-     border-bottom: solid 1px rgb(61, 77, 77);
+     border-bottom: solid 1px rgb(95, 133, 133);
      border-radius: 15%;
 }
 
@@ -30,8 +30,8 @@ p {
      /* text-shadow: white; */
      font-size: 19.5vw;     
     /*  border: solid 2px yellow; */
-     margin: 12% 0 0 8.8%;
-     padding: 0 0 6% 0;
+     margin: 11% 0 0 8.8%;
+     padding: 0 0 0% 0;
 }
 
 .main-container{
@@ -51,7 +51,7 @@ p {
      content: "";
      background-image: url(./assets/images/flor.jpg);
      background-position: center;
-     background-size: 54%;
+     background-size: 53.5%;
      opacity: 0.15;
      top: 0;
      left: 0;
@@ -63,7 +63,7 @@ p {
    }
 
 .indigena {
-     margin: -11% 0% 0 10%;
+     margin: -13% 0% 0 13%;
      width:73%;
      /* z-index: -1; */
      /* border: solid 2px yellow; */
@@ -86,7 +86,7 @@ p {
 }
 
 .yml {
-     border: solid 0.1px  #201e14;
+     border: solid 0.1px  #413f32;
 }
 
 
@@ -97,7 +97,7 @@ footer {
      /* align-items: center; */
      /* border: solid white 2px; */
      /* justify-content: center; */
-     margin: 4vh 0 2vh;
+     margin: 3.5% 0 4%;
 }
 
 .leaf-back {
@@ -154,8 +154,8 @@ footer {
 }
 
 .social-icons:hover{
-     color: #f71e1e;
-     border: #f82a2a;
+     color: #b88805;
+     border: #b88805;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -167,9 +167,9 @@ footer {
      .title {
           display: flex;
           justify-content: center;
-          margin: 3% 0 -1% 0;
+          margin: 3% 0 -2.5% 2.5%;
           padding: 0;
-          font-size: 11.5vw;  
+          font-size: 12.5vw;  
 
      }
 
@@ -185,28 +185,42 @@ footer {
 
      .main-container::after {
 
-          background-position: center;
-          background-size: 36.4%;
-          margin: 0% 0 0 0;
+          background-position: top;
+          background-size: 48.2%;
+          margin: 3% 0 0 0;
+          /* border: red solid 3px */
         }
 
      .indigena {
-          /* position: sticky; */
-          /* top: 0; */
-          margin: -5.5% 4% 0% 17%;
-          width: 30%;
+          position: sticky;
+          top: 0;
+          margin: -113% 8% 0% 14.5%;
+          padding: 5% 0 2% 0;
+          width: 34%;
      }
 
      .artistas-container {
           width: 28%;
-          height: 48vh;
-           overflow: scroll; 
-           /* justify-content: center; */
-           align-items: center; 
-        /*    border-radius: 15px; */
-           margin: -1% 0 0;
-          /* border: red solid 2px; */
+          align-items: center; 
+          margin: 7% 0% 3% -1.5%;
+          /* height: 200vh;        
+          overflow-y: scroll;  */
+          /* border-radius: 15px;
+          justify-content: center;
+          border: red solid 2px; */
+          /* border: green solid 3px */
      }
+
+     /* ::-webkit-scrollbar {
+          -webkit-appearance: media-sliderthumb;
+          width: 7px;
+        }
+        ::-webkit-scrollbar-thumb {
+          border-radius: 4px;
+          background-color: rgba(0, 0, 0, .5);
+          -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+        } */
+
      .artista-container {
           /* align-items: center; */
           
@@ -217,12 +231,12 @@ footer {
 
      .artista {
           width: 99%;
-          margin: 0%;
+          margin: 0 0 3% 0;
      }
      footer { 
           flex-direction: row;  
           width: 50vw;  
-          margin: 0% 0vw 1% 29.5vw;
+          margin: 0% 0% 1.5% 28.3%;
      }
 
      .leaf-back {

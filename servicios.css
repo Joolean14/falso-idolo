@@ -1,5 +1,5 @@
 body {
-     color:  #e2f3f8;
+     color:  #c5bebe;
      /* text-shadow: 2px 2px rgb(107, 14, 14); */
      background: black;
      font-family: 'DaisyWheel', sans-serif;    
@@ -14,8 +14,8 @@ p {
      text-align: center;
      /* text-shadow: 2px 2px rgb(20, 107, 110); */
      margin: 0;
-     padding: 2% 3% 1%;
-     border-bottom: solid 1px rgb(61, 77, 77);
+     padding: 2% 3% 3%;
+     /* border-bottom: solid 1px rgb(61, 77, 77); */
      border-radius: 15%;
 }
 
@@ -23,13 +23,15 @@ p {
      /* display: flex; */
      /* padding: 12% 0 0 0; */
      /* justify-content: center; */
-     position: absolute;
+     /* position: absolute; */
      /* margin-top: 6.3%; */
      /* text-align: center; */
      /* color:  #f4e5f5;   */ 
-     font-size: 17.5vw;     
+     font-size: 19vw;     
     /*  border: solid 2px yellow; */
-     margin: 15% 9% 0;
+     margin: 11% 0% 0 4.5%;
+    /*  margin: 12% 0 0 8.8%; */
+     padding: 0 0 5% 0;
 }
 
 .main-container{
@@ -41,10 +43,29 @@ p {
      /* max-height: 100%; */ 
      max-width: 100%;
      /* border: solid 5px yellow;  */
+     display: block;
+     position: relative;
 }
 
+.main-container::after {
+     content: "";
+     background-image: url(./assets/images/flor.jpg);
+     background-position: top;
+     background-size: 54%;
+     opacity: 0.15;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;   
+     margin: 0% 0 0 0;
+
+     
+   }
+
 .atom {
-     margin-top:32%;
+     margin: -2% 0% 0% 19%;
      width:63%;
      /* border: solid 2px yellow; */
 }
@@ -63,9 +84,10 @@ p {
 
 .jaguar {
      width:85%;
-     margin: 7% 0 -9% 12.5%;
+     margin: 3% 0 -11% 12.5%;
      /* border: solid 2px yellow;  */
-     padding: 0;
+     /* padding: 0;
+     z-index: 5; */
 }
 /* .jaguar, p {
    
@@ -74,21 +96,22 @@ p {
 .boa {
      width:53%;
      transform: rotate(10deg);
-     margin: 9% 0 -2% 0;
+     margin: 8% 0 -2% 0;
      /* border: solid 2px yellow;  */
 }
 
 .guacamaya {
      width:69%;
      transform: rotate(40deg);
-     margin: 1% 0% -6% 1%;
+     margin: 0% 0% -5% 1%;
      /* border: solid 2px yellow;  */
 }
 
 .oso {
      width:40%;
     /*  height: 30%; */
-     margin: 12% 0 -3%;
+     margin: 10% 0 -3%;
+     padding-bottom: ;
 }
 
 footer {
@@ -97,7 +120,7 @@ footer {
      /* align-items: center; */
      /* border: solid white 2px; */
      /* justify-content: center; */
-     margin: 9vh 0 2vh;
+     margin: 5% 0 4%;
 }
 
 .leaf-back {
@@ -161,7 +184,7 @@ footer {
 @media only screen and (min-width: 1024px) {
     
      p {
-          font-size: 1.5vw;
+          font-size: 2.4vw;
           /* width: 100%; */
           border-bottom: none;
           /* border: solid 2px yellow; */ 
@@ -169,92 +192,119 @@ footer {
      }
 
      .title {
-          position: relative;
+          /* position: relative; */
           display: flex;
           justify-content: center;
           /* align-items: center; */
-          margin: 5% 0 0;
-          font-size: 11.5vw;      
+          margin: 3% 0 -7.5% 0;
+          font-size: 12.5vw;      
      }
 
      .main-container {
-          margin: 0 auto;
+          width: 88%;   
+          display: flex;
           flex-direction: row;
-          width: 80%;   
+          margin: auto;
           /* align-items: center; */
-          justify-content: center;
+          /* justify-content: center; */
           /* border: solid blue 5px;  */   
      }
 
+     .main-container::after {
+
+          background-position: top;
+          background-size: 48.2%;
+          margin: 3% 0 0 0;
+          /* border: red solid 3px */
+        }
+
      .atom {
-          margin: -1.5% -4vw 0 0;
+          position: sticky;
+          top: 0;
+          margin: -94% 0% 0 10%;
+          padding: 11% 0 2% 0;
           width: 40%;
           /* position: absolute; */
-          z-index:-1;
+          z-index:-3;
           /* top: -22vh;
           left: 9.5%; */
-          /* border: solid white 2px;  */
+          /* border: solid white 2px; */ 
      }
 
      .servicios-container {
-          width: 50%; 
+          width: 50%;
+          align-items: center; 
+          margin: 7% 0% 0% -10%;
+          /* width: 50%; 
           display: flex;
           flex-direction: row;
-          flex-flow: wrap;
-          /* border: solid 2px yellow;  */
+          flex-flow: wrap; */
+          /* border: solid 2px yellow; */ 
      }
 
      .servicio-container {
           display: flex;
           flex-direction: column; 
           align-items: center;
-          width: 47%;
+          width: 100%;
           /* border: solid 2px yellow;  */
           
      }
      .jaguar {
-          width:24vw;
-          margin: 11% -19% -12% 0%;
+          width:112%;
+          margin: 4% 0% -12% 29%;
+          z-index: 5;
           /* border: solid 2px yellow;  */
           /* padding: 0; */
      }
+
+     .jgr-text {
+          margin: -2% 0 0 12%;
+          /* border: solid 2px yellow; */
+     }
      
-     .serv-cnt-jaguar {
-          margin: 2.7% -7% 0% 7%;
-          /* border: solid 0.01px yellow; */
-     } 
+     /* .serv-cnt-jaguar {
+          margin: 0% 0% 0% 0%;
+          border: solid 0.01px red;
+     }  */
      
      .boa {
-          width:15vw;
-          margin: -6% 0 0% 12%;
+          width:68%;
+          margin: -4% 0 0% 12%;
           /* border: solid 2px yellow;  */
      }
 
-     .boa-flex-item {
-          order: 1;
-          /* margin: -3vh; */
+     .boa-text {
+          margin: -2% 0 0 13.5%;
      }
+
+    /*  .boa-flex-item {
+          order: 1;
+          
+     } */
        
      .guacamaya {
-          width:20vw;
-          margin: -17% 0% -6% 10%;
+          width:97.5%;
+          margin: -17% 0% -3% 7%;
           /* border: solid 2px yellow;  */
 
      }
 
     .gcmys-text {
-          margin: 0 -30% 0% 0%;
+          margin: -9% -12% 0% 0%;
      }
-     .guacamaya-flex-item {
+    /*  .guacamaya-flex-item {
           order: 1;
-     }
+     } */
      
      .oso {
-          width:9vw;
+          width:47%;
           /* max-height: 30vh; */
-          margin: -10% 0 -3%;
+          margin: 4% 0 -3% 11%;
      }
-
+     .oso-text {
+          margin: -2% 0 0 13%;
+     }
 
 
 
@@ -265,7 +315,7 @@ footer {
      footer { 
           flex-direction: row;  
           width: 50vw;  
-          margin: 1.5vh 0vw 0vh 29.5vw;
+          margin: 3% 0% 1.5% 28.3%;
      }
 
      .leaf-back {
