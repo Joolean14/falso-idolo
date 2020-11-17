@@ -45,7 +45,7 @@ p {
      /* border: solid 5px yellow;  */
      display: block;
      position: relative;
-     padding: 0 0 1.7% 0%;
+     padding: 0 0 1.2% 0%;
 }
 
 .main-container::after {
