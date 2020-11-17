@@ -45,7 +45,7 @@ p {
      /* border: solid 5px yellow;  */
      display: block;
      position: relative;
-     padding-bottom: 0%;
+     padding: 0 0 1.7% 0%;
 }
 
 .main-container::after {
@@ -109,7 +109,7 @@ p {
 .oso {
      width:40%;
     /*  height: 30%; */
-     margin: 10% 0 -3%;
+     margin: 10% 0 0%;
 }
 
 footer {
@@ -223,6 +223,8 @@ footer {
           display: flex;
           flex-direction: row;
           margin: auto;
+          padding-bottom: 1.98%;
+          
           /* align-items: center; */
           /* justify-content: center; */
           /* border: solid blue 5px;  */   
