@@ -210,17 +210,17 @@ footer {
           border: red solid 2px; */
           /* border: green solid 3px */
      }
-
+     
      /* ::-webkit-scrollbar {
           -webkit-appearance: media-sliderthumb;
           width: 7px;
-        }
-        ::-webkit-scrollbar-thumb {
+     }
+     ::-webkit-scrollbar-thumb {
           border-radius: 4px;
           background-color: rgba(0, 0, 0, .5);
           -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-        } */
-
+     } */
+     
      .artista-container {
           /* align-items: center; */
           
@@ -228,8 +228,9 @@ footer {
           /* margin: 0% 0 0 1%; */
           /* border: blue solid 2px; */
      }
-
+     
      .artista {
+          border-radius: 50%;
           width: 99%;
           margin: 0 0 3% 0;
      }
