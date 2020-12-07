@@ -234,6 +234,11 @@ footer {
           width: 99%;
           margin: 0 0 3% 0;
      }
+
+     .artista:hover {
+          opacity: 0.5;
+     }
+
      footer { 
           flex-direction: row;  
           width: 50vw;  
