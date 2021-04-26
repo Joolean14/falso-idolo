@@ -239,7 +239,7 @@ footer {
           background-size: 48.2%;
           margin: 3% 0 0 0;
           /* border: red solid 3px */
-        }
+     }
 
      .indigena {
           position: sticky;
@@ -248,7 +248,8 @@ footer {
           padding: 5% 0 2% 0;
           width: 34%;
      }
-
+     
+     
      .artistas-container {
           width: 99%;
           align-items: center;
@@ -261,6 +262,15 @@ footer {
           justify-content: center;
           border: red solid 2px; */
           /* border: green solid 3px */
+     }
+     
+     .artista-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          /* margin: 0% 0 0 1%; */
+          /* border: pink solid 2px; */
      }
 
      .artist-name {
@@ -281,18 +291,7 @@ footer {
      .artista-container:hover .artist-name {
           visibility: visible;
           opacity: 1;
-     }
-  
-     .artista-container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          /* margin: 0% 0 0 1%; */
-          /* border: pink solid 2px; */
-     }
-
- 
+     } 
 
      .artista:hover {
           opacity: 0.5;

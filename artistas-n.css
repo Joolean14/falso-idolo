@@ -1,0 +1,308 @@
+body {
+    color:  #faf4d6;
+    background: black;
+    font-family: 'DaisyWheel', sans-serif;
+    align-items: center;
+    margin: 0%;
+}
+
+.sticky-logo {
+    position: fixed;
+    padding-left: 10px;
+    z-index: 99;
+  }
+
+  .mini-logo {
+      width: 10vw;
+  }
+
+
+p {
+    font-size: 5.3vw;
+    text-align: center;
+    margin: 0;
+    padding: 2% 3% 1%;
+    border-bottom: solid 1px rgb(95, 133, 133);
+    border-radius: 15%;
+}
+
+.title {
+    font-size: 15vw;
+    margin: 11% 0 0 8.8%;
+    padding: 0 0 0% 0;
+    text-align: center;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    position: relative;        
+    background-color: rgba(0,0,0,0.75);
+    
+}
+
+.main-container::after {
+    content: "";
+    background-image: url(./assets/images/flor.jpg);
+    background-position: center;
+    background-size: 53.5%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    margin: 0 0 0 0;
+}
+
+
+
+.indigena {
+    width:73%;
+}
+
+
+/* ============================================================ */
+
+.artista-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+
+.artista-container a {
+    text-decoration: none;
+}
+
+
+
+.artist-name {
+    position: absolute;
+    color: white;
+    font-size: 4vw;
+    padding: 2% 0% 2% 2%;
+    margin: 10% 0% 0% 0%;
+
+}
+
+.artista-container:hover .artist-name {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ============================================================== */
+
+.artistas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artista {
+    width: 20vw;
+    margin: 0% 0 3% 0;
+    border-radius: 50%;
+}
+
+.artista-naranjo {
+    width: 55%;
+    margin: 0% 0 3% 0;
+    border-radius: 50%;
+}
+
+
+
+.yml {
+    border: solid 0.1px  #413f32;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    margin: 3.5% 0 4%;
+}
+
+.leaf-back {
+    width: 6.5vw;
+    transform: rotate(100deg);
+    cursor: pointer;
+    margin: -1vh 10vw 0 13vw;
+}
+
+.footer-portion {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.footer-item {
+    text-decoration: none;
+    display: flex;
+    margin: 0;
+}
+
+.social-icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 72%;
+    margin: 1% 0 2.5%;
+}
+
+.brand-name {
+    font-size: 4.7vw;
+}
+
+.social-icons {
+    font-size: 3vw;
+    color: inherit;
+}
+
+.social-icons:hover{
+    color: #b88805;
+    border: #b88805;
+}
+
+@media only screen and (min-width: 1024px) {
+    .sticky-logo {
+        position: fixed;
+        padding-left: 5vw;
+        z-index: 99;
+      }
+    
+      .mini-logo {
+          width: 4vw;
+      }
+
+    p {
+         font-size: 2vw;
+         border-bottom: none;
+    }
+
+    .title {
+         display: flex;
+         justify-content: center;
+         margin: 3% 0 -2.5% 2.5%;
+         padding: 0;
+         font-size: 12.5vw;
+    }
+
+    .main-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        position: relative;        
+        background-color: rgba(0,0,0,0.75);
+        
+    }
+    
+    
+    .main-container::after {
+        content: "";
+        background-image: url(./assets/images/flor.jpg);
+        background-position: center;
+        background-size: 53.5%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        margin: 0 0 0 0;
+    }
+
+    
+
+    .indigena {
+        display: flex;
+         width: 20%;
+
+
+    }
+    
+    
+    .artistas-container {
+         width: 99%;
+         align-items: center;
+         margin: 7% 0% 3% -1.5%;
+
+    }
+    
+    .artista-container {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+
+    }
+
+    .artist-name {
+         visibility: hidden;
+         position: absolute;
+         color: white;
+         font-size: 2.5vw;
+         border-radius: 4px;
+         padding: 2% 0% 2% 2%;
+         opacity: 0;
+         transition: opacity 2.5s;
+         margin: 10% 0% 0% 0%;
+    
+    }
+    
+    .artista-container:hover .artist-name {
+         visibility: visible;
+         opacity: 1;
+    } 
+
+    .artista:hover {
+         opacity: 0.5;
+    }
+
+    footer {
+         flex-direction: row;
+         width: 50vw;
+         margin: 0% 0% 1.5% 28.3%;
+    }
+
+    .leaf-back {
+         width: 2.2vw;
+         margin: 0 3vw 0 0;
+    }
+
+    .footer-portion {
+         width: 40vw;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         margin: 0;
+    }
+
+    .brand-name {
+         font-size: 1.8vw;
+    }
+
+    .social-icons-container {
+         width: 20vw;
+         justify-content: space-evenly;
+         padding: 2% 0 0;
+    }
+
+    .social-icons {
+         font-size: 1.25vw;
+    }
+}
+
+
+
+
+
