@@ -194,7 +194,7 @@ footer {
       }
     
       .mini-logo {
-          width: 6vw;
+          width: 11vw;
       }
 
     p {
@@ -243,16 +243,7 @@ footer {
 
     }
 
-    .indigena-name {
-        /* position: absolute; */
-        color: white;
-        font-size: 3vw;
-        /* padding: 2% 0% 2% 2%;
-        margin: 10% 0% 0% 0%; */
-    
-    }
-    
-    
+      
     .artistas-container {
          width: 99%;
          align-items: center;
