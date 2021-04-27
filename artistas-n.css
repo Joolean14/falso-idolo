@@ -30,8 +30,8 @@ p {
 .title {
     font-size: 15vw;
     margin: 11% 0 0 8.8%;
-    padding: 0 0 0% 0;
     text-align: center;
+
 }
 
 .main-container{
@@ -62,21 +62,32 @@ p {
 .indigena-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 99;
-    background-color: black;
+    background-color: rgb(8, 8, 8);
     /* border: red solid 2px; */
 }
 
 .indigena {
-    width:15%;
+    width:10vw;
     margin: 0 2vw 0 0;
 }
 
+.nav-bar {
+    /* border: white solid 2px; */
+    width: max-content;
+    /* align-self: end;
+    justify-self: end; */
+}
+
+.nav-bar-icon {
+    width: 4vw;
+    margin-right: 2vw;
+}
 
 /* ============================================================ */
 
@@ -100,6 +111,7 @@ p {
     font-size: 4vw;
     padding: 2% 0% 2% 2%;
     margin: 10% 0% 0% 0%;
+    text-shadow: 2px 2px #000000;
 
 }
 
@@ -110,23 +122,23 @@ p {
 
 /* ============================================================== */
 
+.artist-row {
+    display: flex;
+}
+
 .artistas-container {
     display: flex;
+    /* position: relative   ; */
     flex-direction: column;
     align-items: center;
 }
 
 .artista {
-    width: 20vw;
-    margin: 0% 0 3% 0;
-    border-radius: 50%;
+    width: 40vw;
+    /* margin: 0% 0 3% 0; */
+    /* border-radius: 50%; */
 }
 
-.artista-naranjo {
-    width: 55%;
-    margin: 0% 0 3% 0;
-    border-radius: 50%;
-}
 
 
 
@@ -206,7 +218,7 @@ footer {
          display: flex;
          justify-content: center;
          margin: 3% 0 -2.5% 2.5%;
-         padding: 0;
+         padding-bottom: 2vw;
          font-size: 12.5vw;
     }
 
@@ -260,25 +272,25 @@ footer {
     }
 
     .artist-name {
-         visibility: hidden;
+        
          position: absolute;
          color: white;
          font-size: 2.5vw;
          border-radius: 4px;
          padding: 2% 0% 2% 2%;
-         opacity: 0;
-         transition: opacity 2.5s;
+        
          margin: 10% 0% 0% 0%;
     
     }
     
-    .artista-container:hover .artist-name {
-         visibility: visible;
-         opacity: 1;
-    } 
+  
 
+    .artista {
+        opacity: 0.7;
+    }
+    
     .artista:hover {
-         opacity: 0.5;
+        opacity: 1;
     }
 
     footer {
