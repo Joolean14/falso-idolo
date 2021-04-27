@@ -61,17 +61,20 @@ p {
 
 .indigena-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 99;
     background-color: black;
+    /* border: red solid 2px; */
 }
 
 .indigena {
     width:15%;
-    margin: 0 0 0 0;
+    margin: 0 2vw 0 0;
 }
 
 
@@ -184,13 +187,14 @@ footer {
 
 @media only screen and (min-width: 1024px) {
     .sticky-logo {
+        position: -webkit-sticky;
         position: fixed;
         padding: 0 0 0 5vw;
         z-index: 99;
       }
     
       .mini-logo {
-          width: 4vw;
+          width: 6vw;
       }
 
     p {
@@ -237,6 +241,15 @@ footer {
          width: 4%;
 
 
+    }
+
+    .indigena-name {
+        /* position: absolute; */
+        color: white;
+        font-size: 3vw;
+        /* padding: 2% 0% 2% 2%;
+        margin: 10% 0% 0% 0%; */
+    
     }
     
     
