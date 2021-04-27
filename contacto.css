@@ -221,6 +221,18 @@ button {
      
 } */
 
+.team-info {
+     padding: 20px;
+}
+
+.team-info-title {
+     font-size: 10vw;
+}
+
+.team-info-text {
+     font-size: 4vw;
+}
+
 .leaf-back {
      width: 6.5vw;
      /* height: 2%; */
@@ -382,6 +394,19 @@ footer {
           width: 70%;
      }
 
+     .team-info {
+          padding: 10px;
+          margin: 10px;
+     }
+     
+     .team-info-title {
+          font-size: 5vw;
+     }
+     
+     .team-info-text {
+          font-size: 2vw;
+     }
+  
 
      footer { 
           display: flex;
