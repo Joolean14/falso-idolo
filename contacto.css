@@ -1,7 +1,7 @@
 body {
-     color:  #f4e5f5;
+     color: #f4e5f5;
      background: black;
-     font-family: 'DaisyWheel', sans-serif;    
+     font-family: 'DaisyWheel', sans-serif;
      align-items: center;
      margin: 0;
      /* border: solid 2px yellow; */
@@ -17,46 +17,47 @@ body {
      /* margin: 0 auto; */
      /* float: top; */
      /* text-align: center; */
-     color:  #f4e5f5;   
+     color: #f4e5f5;
      /* text-shadow: white; */
-     font-size: 18.5vw;     
+     font-size: 18.5vw;
 }
 
-input, textarea {
+input,
+textarea {
      font-size: 3vw;
 }
 
-.macro-container{
-     
+.macro-container {
+
      margin-top: 8%;
      display: flex;
      /* justify-content: center; */
      align-items: center;
      flex-direction: column;
-     
-    
-     /* max-height: 100%; */ 
+
+
+     /* max-height: 100%; */
      max-width: 100%;
 
      /* background-image: url(./assets/images/rio.jpg);
      background-size: cover;
       */
-      /* background-blend-mode: hard-light; */
-      /* border: violet solid 2px;  */
+     /* background-blend-mode: hard-light; */
+     /* border: violet solid 2px;  */
 }
 
 
-.main-container{
+.main-container {
      display: flex;
      flex-direction: column;
      /* text-align: center; */
      align-items: center;
-    /*  border: blue solid 2px; */
+     /*  border: blue solid 2px; */
      width: 100%;
      /* height: 50%;  */
-} 
+}
 
-.rana-orquidea{
+.rana-orquidea {
      display: flex;
      width: 81%;
      /* position: absolute;  */
@@ -74,30 +75,32 @@ input, textarea {
      /* margin: 36.5vh 0 0; */
      margin: -2% 0 0 0;
      font-family: 'DaisyWheel', sans-serif;
-    /*  border: blue solid 2px  */
+     /*  border: blue solid 2px  */
 }
 
 .form-control.success input {
      border-color: #2ecc71;
- }
- 
- .form-control.error input {
-     border-color: #e74c3c;
- }
+}
 
-.form input, textarea{
+.form-control.error input {
+     border-color: #e74c3c;
+}
+
+.form input,
+textarea {
      width: 45vw;
-     line-height: 1.6; 
+     line-height: 1.6;
      background-color: rgb(244, 229, 245);
      border-radius: 2vw;
      margin-top: 6%;
-     font-family: inherit; 
+     font-family: inherit;
      /* border: red solid 2px  */
 }
 
 textarea {
      width: 58vw;
 }
+
 /* .form textarea {
      width: 45vw;
      height: 12vw;
@@ -105,7 +108,8 @@ textarea {
 
 /* errors handling */
 
-.form-item i, small{
+.form-item i,
+small {
      visibility: hidden;
      position: absolute;
      /* top: 40px;
@@ -116,73 +120,74 @@ textarea {
      /* border: yellow solid 1px; */
      text-align: center;
      width: 100%;
-     margin-top: 2%; 
-         
+     margin-top: 2%;
+
 }
 
 .checkbox-container p {
      font-size: 3vw;
      display: inline;
      /* border: violet solid 2px; */
-     
+
 }
 
 .checkbox-container a {
      text-decoration: underline;
-     color:  #f4e5f5;
+     color: #f4e5f5;
      /*  border: yellow solid 1px; */
 }
 
-.checkbox-container a:hover, .social-icons:hover{
+.checkbox-container a:hover,
+.social-icons:hover {
      color: #BF65A7;
      border: #BF65A7;
 }
 
-input[type="checkbox" i] {
+input[type="checkbox"i] {
      margin-top: 0;
 }
 
 input.check {
-     width : 2.8vw;
-     height : 2.8vw;
+     width: 2.8vw;
+     height: 2.8vw;
      /* text-align: left; */
      /* background-color: lavenderblush; */
-     
+
 }
 
-button {  
+button {
      margin: 4vw 0 4vw;
      border-radius: 50%;
      width: 21%;
      padding: 0;
      border: black;
      background-color: black;
-    /*  color: transparent; */
-    /*  background-image: url("./assets/images/espiral.jpg");
+     /*  color: transparent; */
+     /*  background-image: url("./assets/images/espiral.jpg");
      background-size: cover; */
-     
+
      /* background-repeat: no-repeat; */
      /* width: 21%;
      height: 12vh; */
 
-     
-     
+
+
      /* border-top: solid #4d2c44 0.5px;  */
      /* border-right: solid #83717e 0.05px;
      border-bottom: solid #BF65A7 0.001px; */
      /* border-left: solid #ac89a2 0.005px; */
-     
-     
-     
-     
-     /* box-shadow: #BF65A7;  */ 
+
+
+
+
+     /* box-shadow: #BF65A7;  */
 }
 
-.spiral-send{
+.spiral-send {
      border-radius: 50%;
      width: 95%;
      border-radius: 50%;
-  
+
 }
 
 .spinning {
@@ -196,33 +201,36 @@ button {
 
 @-webkit-keyframes rotation {
      from {
-               -webkit-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
      }
+
      to {
-               -webkit-transform: rotate(359deg);
+          -webkit-transform: rotate(359deg);
      }
 }
 
 @-webkit-keyframes rotation2 {
      from {
-               -webkit-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
      }
+
      to {
-               -webkit-transform: rotate(-359deg);
+          -webkit-transform: rotate(-359deg);
      }
 }
 
-.form input:focus, textarea:focus {
+.form input:focus,
+textarea:focus {
      outline: 0;
      border-color: #BF65A7;
-   }
+}
 
 /* .hover:hover {
      
 } */
 
 .team-info {
-     padding: 20px;
+     padding: 2vw 7vw 6vw 7vw;
 }
 
 .team-info-title {
@@ -233,15 +241,20 @@ button {
      font-size: 4vw;
 }
 
+.bold {
+     font-weight: 600;
+     font-style: italic;
+}
+
 .leaf-back {
      width: 6.5vw;
      /* height: 2%; */
-    /*  border: solid rgb(0, 255, 55) 2px; */
+     /*  border: solid rgb(0, 255, 55) 2px; */
      transform: rotate(100deg);
      cursor: pointer;
      /* position: absolute; */
      margin: 0vh 67vw -13% 0vw;
-     
+
      /* top: 101.5%; */
      /* bottom: -7.5%; */
 }
@@ -258,7 +271,7 @@ footer {
 
 .footer-item {
      text-decoration: none;
-     display: flex;  
+     display: flex;
      /* width: 100%; */
      margin: 0;
      /* text-align: center; */
@@ -276,24 +289,24 @@ footer {
 }
 
 .brand-name {
-     font-size: 4.7vw; 
+     font-size: 4.7vw;
 }
 
 .social-icons {
      font-size: 3vw;
-     color:  #f4e5f5;
+     color: #f4e5f5;
      /* border: solid rgb(0, 255, 55) 2px; */
 }
 
 
 @media only screen and (min-width: 1024px) {
-     
-   
+
+
      .title {
-         /*  position: static; */
+          /*  position: static; */
           margin: 4% 0 1.5%;
           /* text-shadow: white; */
-          font-size: 11.5vw;      
+          font-size: 11.5vw;
      }
 
      .macro-container {
@@ -301,24 +314,24 @@ footer {
           flex-direction: column;
           align-items: center;
           /* max-width: 80%; */
-         /*  justify-content: flex-start; */
-         /* border: solid rgb(0, 255, 55) 2px; */
-         /* width: 70%; */
-         
+          /*  justify-content: flex-start; */
+          /* border: solid rgb(0, 255, 55) 2px; */
+          /* width: 70%; */
+
      }
 
-     .main-container{
+     .main-container {
           width: 95%;
           flex-direction: row;
           /* align-items: center; */
           /* height: 80%; */
-         /*  border: solid yellow 2px; */
+          /*  border: solid yellow 2px; */
           /* margin: 0; */
           justify-content: center;
-          
+
      }
 
-     
+
      .rana-orquidea {
           width: 46.5%;
           /* position: absolute; */
@@ -335,13 +348,14 @@ footer {
           margin: -2% 0% 0 -12.5%;
           /* margin-left: 55%; */
           /* margin: 0 3vw 0 0; */
-          /* border: solid rgb(0, 255, 55) 2px;  */   
+          /* border: solid rgb(0, 255, 55) 2px;  */
      }
 
 
 
-     .form input, textarea {  
-          line-height: 0.5; 
+     .form input,
+     textarea {
+          line-height: 0.5;
      }
 
 
@@ -349,10 +363,11 @@ footer {
           width: 16vw
      }
 
-     input::placeholder, textarea::placeholder {
-          font-size: 60%; 
+     input::placeholder,
+     textarea::placeholder {
+          font-size: 60%;
      }
-     
+
      .form textarea {
           width: 22vw;
           margin-bottom: 0.5vh;
@@ -360,12 +375,12 @@ footer {
      }
 
      input.check {
-          width : 1vw;
-          height : 1vw;
+          width: 1vw;
+          height: 1vw;
           margin: 0% 1vw 0;
      }
 
-    /*  input + p {
+     /*  input + p {
           font-size: 2vw;
           
      } */
@@ -374,44 +389,46 @@ footer {
           width: 100%;
           /* border: solid rgb(0, 255, 55) 2px; */
      }
+
      .checkbox-container {
           width: 85%;
-         /*  border: red solid 3px  */
+          /*  border: red solid 3px  */
      }
 
      .checkbox-container p {
           font-size: 1.4vw;
           line-height: 1.2;
           /* margin-top: 3vh; */
-          /* border: red solid 3px  */  
-     } 
+          /* border: red solid 3px  */
+     }
 
      button {
           margin: 3% 0 0;
           /* border: red solid 3px; */
      }
-     .spiral-send{         
+
+     .spiral-send {
           width: 70%;
      }
 
      .team-info {
-          padding: 10px;
+          padding: 2vw 4vw 6vw 4vw;
           margin: 10px;
      }
-     
+
      .team-info-title {
           font-size: 5vw;
      }
-     
+
      .team-info-text {
           font-size: 2vw;
      }
-  
 
-     footer { 
+
+     footer {
           display: flex;
-          flex-direction: row;  
-          width: 52vw;  
+          flex-direction: row;
+          width: 52vw;
           margin: -1.5% 0vw 0% 11vw;
           /* border: red 2px solid; */
      }
@@ -434,7 +451,7 @@ footer {
      .brand-name {
           font-size: 1.8vw;
           margin: 0 0 0 0%;
-         /*  border: red 2px solid; */
+          /*  border: red 2px solid; */
      }
 
      .social-icons-container {
@@ -448,5 +465,5 @@ footer {
      .social-icons {
           font-size: 1.25vw;
      }
-    
+
 }
