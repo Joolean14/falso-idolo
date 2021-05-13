@@ -1,15 +1,20 @@
 .circular-menu {
   position: fixed;
-  bottom: 1em;
+  top: 1em;
   right: 1em;
   z-index: 999;
 }
 
+.mini-logo {
+  width: 12em;
+}
+
 .circular-menu .floating-btn {
   display: block;
-  width: 9.5em;
-  height: 9.5em;
+  width: 3.5em;
+  height: 3.5em;
   border-radius: 50%;
+  background-color: black;
   box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, .26);  
   color: hsl(0, 0%, 100%);
   text-align: center;
@@ -26,22 +31,31 @@
   box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, .4);
 }
 
+.circular-menu .floating-btn i {
+  font-size: 1.3em;
+  transition: transform .2s;  
+}
+
+.circular-menu.active .floating-btn i {
+  transform: rotate(-45deg);
+}
+
 .circular-menu:after {
   display: block;
   content: ' ';
-  width: 3em;
-  height: 3em;
+  width: 3.5em;
+  height: 3.5em;
   border-radius: 50%;
   position: absolute;
-  top: 5em;
-  /* right: 10em; */
-  left: 4em;
+  top: 0;
+  right: 0;
   z-index: -2;
-  transition: all .2s ease;
+  background-color: hsl(4, 98%, 60%);
+  transition: all .3s ease;
 }
 
 .circular-menu.active:after {
-  transform: scale3d(12, 12, 1);
+  transform: scale3d(5.5, 5.5, 1);
   transition-timing-function: cubic-bezier(.68, 1.55, .265, 1);
 }
 
@@ -52,8 +66,8 @@
 
 .circular-menu .menu-item {
   position: absolute;
-  top: 0em;
-  right: 3em;
+  top: .2em;
+  right: .2em;
   z-index: -1;
   display: block;
   text-decoration: none;
@@ -76,18 +90,39 @@
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+.circular-menu.active .menu-item:nth-child(1) {
+  transform: translate3d(1em,-7em,0);
+}
+
+.circular-menu.active .menu-item:nth-child(2) {
+  transform: translate3d(-3.5em,-6.3em,0);
+}
+
+.circular-menu.active .menu-item:nth-child(3) {
+  transform: translate3d(-6.5em,-3.2em,0);
+}
+
+.circular-menu.active .menu-item:nth-child(4) {
+  transform: translate3d(-7em,1em,0);
+}
+
+/**
+ * The other theme for this menu
+ */
+
 .circular-menu.circular-menu-left {
   right: auto; 
-  left: 3em;
-  top: 3em;
+  left: 1em;
 }
 
 .circular-menu.circular-menu-left .floating-btn {
-  background-color: black;
+  /* background-image: url(./assets/images/falso-idolo-logo.png);
+  background-position: center;
+  background-size: contain; */
 }
 
 .circular-menu.circular-menu-left:after {
-  background-color: black;
+  background-color: hsl(217, 89%, 61%);
 }
 
 .circular-menu.circular-menu-left.active .floating-btn i {
@@ -95,19 +130,19 @@
 }
 
 .circular-menu.circular-menu-left.active .menu-item:nth-child(1) {
-  transform: translate3d(8em,11em,0);
+  transform: translate3d(7em,0em,0);
 }
 
 .circular-menu.circular-menu-left.active .menu-item:nth-child(2) {
-  transform: translate3d(3.5em,16.7em,0);
+  transform: translate3d(6.5em,3.7em,0);
 }
 
 .circular-menu.circular-menu-left.active .menu-item:nth-child(3) {
-  transform: translate3d(-4.5em,17.8em,0);
+  transform: translate3d(4em,6.3em,0);
 }
 
 .circular-menu.circular-menu-left.active .menu-item:nth-child(4) {
-  transform: translate3d(0em,14em,0);
+  transform: translate3d(0em,7em,0);
 }
 
 body {
@@ -124,9 +159,9 @@ body {
   z-index: 999 !important;
 }
 
-.mini-logo {
+/* .mini-logo {
   width: 10vw;
-}
+} */
 
 p {
   font-size: 5.3vw;
