@@ -8,28 +8,32 @@
     <link rel="shortcut icon" href="assets/images/favicon-logo.png" type="image/x-icon" />
     <link href="https://fonts.cdnfonts.com/css/daisy-wheel" rel="stylesheet" />
     <link rel="stylesheet" href="artistas-n.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 
 <body>
     <div class="sticky-logo">
         <a href="index.html">
-            <img class="mini-logo" src="assets/images/falso-idolo-logo.png" alt="" />
         </a>
     </div>
     <h1 class="title">Artistas</h1>
-    <div class="indigena-container">
-        <img class="indigena" src="./assets/images/recursos.png" alt="" />
-        <div class="nav-bar">
-            <img class="nav-bar-icon" src="./assets/images/guacamayas.png" alt="" />
-            <img class="nav-bar-icon" src="./assets/images/noticias.png" alt="" />
-            <img class="nav-bar-icon" src="./assets/images/contacto.png" alt="" />
-        </div>
+    
+    <div id="circularMenu1" class="circular-menu circular-menu-left active">
+        <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+            <img class="mini-logo" src="assets/images/falso-idolo-logo.png" alt="" />
+        </a>
+
+        <menu class="items-wrapper">
+            <a href="#" class="menu-item fa fa-home"></a>
+            <a href="#" class="menu-item fa fa-user"></a>
+            <a href="#" class="menu-item fa fa-pie-chart"></a>
+            <a href="#" class="menu-item fa fa-cog"></a>
+        </menu>
     </div>
+
     <div class="main-container">
         <div class="artistas-container">
-           
             <div class="artist-row">
-
                 <div class="artista-container">
                     <a target="_blank" href="https://www.solovalencia.co/">
                         <img class="artista" src="./assets/images/solo-valencia.jpg" alt="Solo Valencia" />
@@ -45,8 +49,6 @@
                 </div>
             </div>
             <div class="artist-row">
-
-
                 <div class="artista-container">
                     <a target="_blank"
                         href="https://open.spotify.com/artist/506n23LocG9uy4Hp4nAQ6S?si=yqm55zpHQjOUx-W0De-2UQ">
@@ -60,7 +62,6 @@
                     </a>
                     <span class="artist-name">Juan Astronauta</span>
                 </div>
-
             </div>
         </div>
     </div>
@@ -94,14 +95,6 @@
 </body>
 
 </html>
-
-<!-- <div class='artista-container'>
-                <a target="_blank"
-                    href="https://open.spotify.com/artist/4H6d9OcJoO079xAnCLlWe4?si=HVF8ZGoySiy-nZ7InajpiQ">
-                    <img class='artista' src="./assets/images/mucama.png" alt="Mucama" />
-                    <span class="artist-name">Mucama</span>
-                </a>
-            </div> -->
 
 <!-- <div class='artista-container'>
                 <a target="_blank"
