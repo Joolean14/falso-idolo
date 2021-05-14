@@ -5,8 +5,9 @@
   z-index: 999;
 }
 
+
 .mini-logo {
-  width: 12em;
+  width: 15vw;
 }
 
 .circular-menu .floating-btn {
@@ -50,7 +51,7 @@
   top: 0;
   right: 0;
   z-index: -2;
-  background-color: hsl(4, 98%, 60%);
+  /* background-color: hsl(4, 98%, 60%); */
   transition: all .3s ease;
 }
 
@@ -90,21 +91,7 @@
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.circular-menu.active .menu-item:nth-child(1) {
-  transform: translate3d(1em,-7em,0);
-}
 
-.circular-menu.active .menu-item:nth-child(2) {
-  transform: translate3d(-3.5em,-6.3em,0);
-}
-
-.circular-menu.active .menu-item:nth-child(3) {
-  transform: translate3d(-6.5em,-3.2em,0);
-}
-
-.circular-menu.active .menu-item:nth-child(4) {
-  transform: translate3d(-7em,1em,0);
-}
 
 /**
  * The other theme for this menu
@@ -119,10 +106,12 @@
   /* background-image: url(./assets/images/falso-idolo-logo.png);
   background-position: center;
   background-size: contain; */
+  background-color: black;
+
 }
 
 .circular-menu.circular-menu-left:after {
-  background-color: hsl(217, 89%, 61%);
+  background-color: black;
 }
 
 .circular-menu.circular-menu-left.active .floating-btn i {
@@ -328,12 +317,47 @@ footer {
   border: #b88805;
 }
 
+@media only screen and (min-width: 600px) {
+  .circular-menu.active:after {
+    transform: scale3d(8, 8, 1);
+  }
+
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(1) {
+    transform: translate3d(10em,0em,0);
+  }
+  
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(2) {
+    transform: translate3d(9em,5em,0);
+  }
+  
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(3) {
+    transform: translate3d(4em,9em,0);
+  }
+  
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(4) {
+    transform: translate3d(0em,10em,0);
+  }
+}
+
 @media only screen and (min-width: 1024px) {
-  .sticky-logo {
-    position: -webkit-sticky;
-    position: fixed;
-    padding: 0 0 0 5vw;
-    z-index: 99;
+  .circular-menu.active:after {
+    transform: scale3d(10, 10, 1);
+  }
+
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(1) {
+    transform: translate3d(14em,0em,0);
+  }
+  
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(2) {
+    transform: translate3d(13em,7.4em,0);
+  }
+  
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(3) {
+    transform: translate3d(8em,12.6em,0);
+  }
+  
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(4) {
+    transform: translate3d(0em,14em,0);
   }
 
   .mini-logo {
