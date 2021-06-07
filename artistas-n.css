@@ -179,9 +179,10 @@ p {
 
 .main-container::after {
   content: "";
-  background-image: url(./assets/images/flor.jpg);
-  background-position: center;
-  background-size: 53.5%;
+  background-image: url(./assets/images/macro-micro.jpg);
+  background-position: top;
+  background-size: 80vw;
+  background-repeat: no-repeat;
   top: 0;
   left: 0;
   bottom: 0;
@@ -200,13 +201,13 @@ p {
   position: sticky;
   top: 0;
   z-index: 99;
-  background-color: rgb(8, 8, 8);
+  /* background-color: rgb(8, 8, 8); */
   /* border: red solid 2px; */
 }
 
 .indigena {
   width: 10vw;
-  margin: 0 2vw 0 0;
+  margin: 12vw 0 0 3vw;
 }
 
 .nav-bar {
@@ -271,7 +272,8 @@ p {
 footer {
   display: flex;
   flex-direction: row;
-  margin: 3.5% 0 4%;
+  justify-content: center;
+  /* margin: 3.5% 0 4%; */
 }
 
 .leaf-back {
@@ -388,7 +390,7 @@ footer {
 
   .main-container::after {
     content: "";
-    background-image: url(./assets/images/flor.jpg);
+    /* background-image: url(./assets/images/flor.jpg); */
     background-position: center;
     background-size: 53.5%;
     top: 0;
@@ -401,7 +403,7 @@ footer {
   }
 
   .indigena {
-    width: 4%;
+    width: 5vw;
   }
 
   .artistas-container {
@@ -432,30 +434,13 @@ footer {
     margin: 10% 0% 0% 0%;
   }
 
-  /* .artista {
-        }
-        */
+  
   .artista:hover {
     filter: brightness(1.05);
   }
-
-  footer {
-    flex-direction: row;
-    width: 50vw;
-    margin: 0% 0% 1.5% 28.3%;
-  }
-
-  .leaf-back {
-    width: 2.2vw;
-    margin: 0 3vw 0 0;
-  }
-
+ 
   .footer-portion {
     width: 40vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0;
   }
 
   .brand-name {
@@ -464,8 +449,6 @@ footer {
 
   .social-icons-container {
     width: 20vw;
-    justify-content: space-evenly;
-    padding: 2% 0 0;
   }
 
   .social-icons {
