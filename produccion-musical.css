@@ -1,0 +1,416 @@
+
+body {
+    color: #faf4d6;
+    background: black;
+    font-family: "DaisyWheel", sans-serif;
+    align-items: center;
+    margin: 0%;
+  }
+  
+  /* Circular menu start */
+  
+  .circular-menu {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    z-index: 999;
+  }
+  
+  .mini-logo {
+    width: 15vw;
+  }
+  
+  .circular-menu .floating-btn {
+    display: block;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, 0.26);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    line-height: 3.9;
+    cursor: pointer;
+    outline: 0;
+  }
+  
+  .circular-menu.active .floating-btn {
+    box-shadow: inset 0 0 3px hsla(0, 0%, 0%, 0.3);
+  }
+  
+  .circular-menu .floating-btn:active {
+    box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.4);
+  }
+  
+  .circular-menu .floating-btn i {
+    font-size: 1.3em;
+    transition: transform 0.2s;
+  }
+  
+  .circular-menu.active .floating-btn i {
+    transform: rotate(-45deg);
+  }
+  
+  .circular-menu:after {
+    display: block;
+    content: " ";
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+    /* background-color: hsl(4, 98%, 60%); */
+    transition: all 0.3s ease;
+  }
+  
+  .circular-menu.active:after {
+    transform: scale3d(5.5, 5.5, 1);
+    transition-timing-function: cubic-bezier(0.68, 1.55, 0.265, 1);
+  }
+  
+  .circular-menu .items-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .circular-menu .menu-item {
+    position: absolute;
+    top: 0.2em;
+    right: 0.2em;
+    z-index: -1;
+    display: block;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 1em;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3;
+    background-color: hsla(0, 0%, 0%, 0.1);
+    transition: transform 0.3s ease, background 0.2s ease;
+  }
+  
+  .circular-menu .menu-item:hover {
+    background-color: hsla(0, 0%, 0%, 0.3);
+  }
+  
+  .circular-menu.active .menu-item {
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .circular-menu.circular-menu-left {
+    right: auto;
+    left: 1em;
+  }
+  
+  .circular-menu.circular-menu-left .floating-btn {
+    /* background-image: url(./assets/images/falso-idolo-logo.png);
+      background-position: center;
+      background-size: contain; */
+    background-color: black;
+  }
+  
+  .circular-menu.circular-menu-left:after {
+    background-color: black;
+  }
+  
+  .circular-menu-icon {
+    width: 10vw;
+    border: solid red 2px;
+  }
+  
+  .circular-menu.circular-menu-left.active .floating-btn i {
+    transform: rotate(90deg);
+  }
+  
+  /* .circular-menu.circular-menu-left.active .menu-item:nth-child(1) {
+      transform: translate3d(8em,0em,0);
+    }
+    
+    .circular-menu.circular-menu-left.active .menu-item:nth-child(2) {
+      transform: translate3d(7em,3em,0);
+    }
+    
+    .circular-menu.circular-menu-left.active .menu-item:nth-child(3) {
+      transform: translate3d(6em,6em,0);
+    }
+    
+    .circular-menu.circular-menu-left.active .menu-item:nth-child(4) {
+      transform: translate3d(3em,8em,0);
+    }
+    
+    .circular-menu.circular-menu-left.active .menu-item:nth-child(5) {
+      transform: translate3d(0em,9em,0);
+    } */
+  
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(1) {
+    transform: translate3d(8em, 0em, 0);
+  }
+  
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(2) {
+    transform: translate3d(7em, 3em, 0);
+  }
+  
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(3) {
+    transform: translate3d(5.5em, 5.5em, 0);
+  }
+  
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(4) {
+    transform: translate3d(3em, 7em, 0);
+  }
+  
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(5) {
+    transform: translate3d(0em, 8em, 0);
+  }
+  
+  /* Circular menu end */
+  
+  .sticky-logo {
+    position: fixed;
+    padding-left: 10px;
+    z-index: 1;
+  }
+  
+  p {
+    font-size: 5.3vw;
+    text-align: center;
+    margin: 0;
+    padding: 2% 3% 1%;
+    border-bottom: solid 1px rgb(95, 133, 133);
+    border-radius: 15%;
+  }
+  
+  .title {
+    font-size: 15vw;
+    margin: 11% 0 0 8.8%;
+    text-align: center;
+  }
+  
+  .main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .main-container::after {
+    content: "";
+    background-image: url(./assets/images/macro-micro.jpg);
+    background-position: top;
+    background-size: 80vw;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    margin: 0 0 0 0;
+  }
+  
+  .indigena-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+  
+  .indigena {
+    width: 10vw;
+    margin: 10vw 0 0 3vw;
+  }
+  
+/* MAIN */
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+}
+
+.service-text {
+    font-size: 5.7vw;
+
+}
+
+.black-white-animal {
+    width: 50vw;
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    margin: 1vw;
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+/* MAIN end */
+
+  /* Footer start */
+  
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2vh;
+    /* margin: 3.5% 0 4%; */
+  }
+  
+  .leaf-back {
+    width: 6.5vw;
+    transform: rotate(100deg);
+    cursor: pointer;
+    margin: -1vh 10vw 0 13vw;
+  }
+  
+  .footer-portion {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .footer-item {
+    text-decoration: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .social-icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 72%;
+    margin: 1% 0 2.5%;
+  }
+  
+  .brand-name {
+    font-size: 3vw;
+  }
+  
+  .social-icons {
+    font-size: 3vw;
+    color: inherit;
+  }
+  
+  .social-icons:hover {
+    color: #b88805;
+    border: #b88805;
+  }
+  
+  /* Footer end */
+  
+  @media only screen and (min-width: 600px) {
+    /* Circular menu start */
+    .circular-menu.active:after {
+      transform: scale3d(6, 6, 1);
+    }
+  
+    .circular-menu-icon {
+      width: 3.8vw;
+    }
+    /* Circular menu end */
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    /* Circular menu start */
+    .circular-menu.active:after {
+      transform: scale3d(8, 8, 1);
+    }
+  
+    .circular-menu-icon {
+      width: 3vw;
+    }
+  
+    .mini-logo {
+      width: 11vw;
+    }
+  
+    /* Circular menu end */
+  
+    p {
+      font-size: 2vw;
+      border-bottom: none;
+    }
+  
+    .title {
+      display: flex;
+      justify-content: center;
+      margin: 3% 0 -2.5% 2.5%;
+      padding-bottom: 2vw;
+      font-size: 12.5vw;
+    }
+  
+    .main-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.75);
+    }
+  
+    .main-container::after {
+      content: "";
+      /* background-image: url(./assets/images/flor.jpg); */
+      background-position: center;
+      background-size: 53.5%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+      margin: 0 0 0 0;
+    }
+  
+    .indigena {
+      width: 5vw;
+    }
+  
+    /* Footer start */
+    .footer-portion {
+      width: 40vw;
+    }
+  
+    .brand-name {
+      font-size: 1.8vw;
+    }
+  
+    .social-icons-container {
+      width: 20vw;
+    }
+  
+    .social-icons {
+      font-size: 1.25vw;
+    }
+  
+    /* Footer end */
+  }
+  
