@@ -411,20 +411,6 @@ footer {
           width: 70%;
      }
 
-     .team-info {
-          padding: 2vw 4vw 6vw 4vw;
-          margin: 10px;
-     }
-
-     .team-info-title {
-          font-size: 5vw;
-     }
-
-     .team-info-text {
-          font-size: 2vw;
-     }
-
-
      footer {
           display: flex;
           flex-direction: row;
