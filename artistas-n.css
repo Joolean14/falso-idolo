@@ -14,7 +14,7 @@ body {
 }
 
 .mini-logo {
-  width: 15vw;
+  width: 18vw;
 }
 
 .circular-menu .floating-btn {
@@ -117,7 +117,7 @@ body {
 
 .circular-menu-icon {
   width: 10vw;
-  border: solid red 2px;
+  /* border: solid red 2px; */
 }
 
 .circular-menu.circular-menu-left.active .floating-btn i {
