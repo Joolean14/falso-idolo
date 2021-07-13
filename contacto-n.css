@@ -319,6 +319,31 @@ textarea:focus {
   border-color: #BF65A7;
 }
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+  font-size: 2vw;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+  font-size: 2vw;
+
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+  font-size: 2vw;
+
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: black;
+  font-size: 2vw;
+
+}
+
+input[type=text], input[type=email] {
+  font-size: 2vw;
+  padding-left: 2vw;
+
+}
 
 
 
@@ -531,12 +556,15 @@ footer {
     line-height: 3;
     background-color: rgb(244, 229, 245);
     border-radius: 2vw;
-    margin-top: 6%;
+    margin-top: 5%;
     font-family: inherit;
   }
 
   textarea {
     width: 50vw;
+    font-size: 2vw;
+  padding-left: 2vw;
+
   }
 
   /* errors handling */
