@@ -125,7 +125,7 @@ body {
   transform: rotate(90deg);
 }
 
-/* .circular-menu.circular-menu-left.active .menu-item:nth-child(1) {
+  /* .circular-menu.circular-menu-left.active .menu-item:nth-child(1) {
       transform: translate3d(8em,0em,0);
     }
     
@@ -527,8 +527,8 @@ footer {
 
   .form input,
   textarea {
-    width: 58vw;
-    line-height: 1.6;
+    width: 50vw;
+    line-height: 3;
     background-color: rgb(244, 229, 245);
     border-radius: 2vw;
     margin-top: 6%;
@@ -536,9 +536,8 @@ footer {
   }
 
   textarea {
-    width: 58vw;
+    width: 50vw;
   }
-
 
   /* errors handling */
 

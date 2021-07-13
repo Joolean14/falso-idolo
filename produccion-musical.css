@@ -378,9 +378,10 @@ body {
   
     .main-container::after {
       content: "";
-      /* background-image: url(./assets/images/flor.jpg); */
-      background-position: center;
+      background-image: url(./assets/images/flor.jpg);
+      background-position: top;
       background-size: 53.5%;
+      background-repeat: repeat-y;
       top: 0;
       left: 0;
       bottom: 0;
