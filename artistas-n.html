@@ -12,45 +12,51 @@
 </head>
 
 <body>
-    
+
+    <div class="sticky-logo">
+        <a href="index.html">
+            <img class="logo" src="assets/images/falso-idolo-logo.png" alt="">
+        </a>
+        <img class="indigena" src="assets/images/recursos.png" alt="" />
+    </div>
     <h1 class="title">Artistas</h1>
 
+
+
     <!-- CIRCULAR MENU -->
-    <div id="circularMenu1" class="circular-menu circular-menu-left active">
-        <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
-            <img class="mini-logo" src="assets/images/falso-idolo-logo.png" alt="" />
+    <div id="circularMenu" class="circular-menu">
+        <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+            <div class="circular-menu-plus">
+                <i class="fa fa-plus"></i>
+            </div>
         </a>
 
         <menu class="items-wrapper">
-            <div>
-                <a href="noticias.html" class="menu-item">
-                    <img class="circular-menu-icon" src="assets/images/noticias.png" alt="" />
-                </a>
-            </div>
-            <div>
-                <a href="noticias.html" class="menu-item">
-                    <img class="circular-menu-icon" src="assets/images/noticias.png" alt="" />
-                </a>
-            </div>
-            <div>
-                <a href="noticias.html" class="menu-item">
-                    <img class="circular-menu-icon" src="assets/images/noticias.png" alt="" />
-                </a>
-            </div>
-            <div>
-                <a href="noticias.html" class="menu-item">
-                    <img class="circular-menu-icon" src="assets/images/noticias.png" alt="" />
-                </a>
-            </div>
-            <div>
-                <a href="noticias.html" class="menu-item">
-                    <img class="circular-menu-icon" src="assets/images/noticias.png" alt="" />
-                </a>
-            </div>         
+            <a href="artistas-n.html" class="menu-item tooltip-buscame">
+                <img class="menu-mini-img" src="assets/images/recursos.png" alt="">
+                <span class="tooltiptext">Artistas</span>
+            </a>
+            <a href="produccion-musical.html" class="menu-item tooltip-videos">
+                <img class="menu-mini-img" src="assets/images/servicios.png" alt="">
+                <span class="tooltiptext">Producción Musical</span>
+            </a>
+            <a href="piensa.html" class="menu-item tooltip-medios">
+                <img class="menu-mini-img" src="assets/images/piensa.png" alt="">
+                <span class="tooltiptext">Piensa</span>
+            </a>
+            <a href="noticias.html" class="menu-item tooltip-newsletter">
+                <img class="menu-mini-img" src="assets/images/noticias.png" alt="">
+                <span class="tooltiptext">Film</span>
+            </a>
+            <a href="contacto-n.html" class="menu-item tooltip-contacto">
+                <img class="menu-mini-img" src="assets/images/contacto.png" alt="">
+                <span class="tooltiptext">Contacto</span>
+            </a>
+            <!-- <a href="" class="menu-item tooltip-home">
+                    <img class="menu-mini-img" src="assets/images/contacto.png" alt=""> 
+                    <span class="tooltiptext">Home</span>
+                </a> -->
         </menu>
-    </div>
-    <div class="sticky-logo">
-        <img class="indigena" src="assets/images/recursos.png" alt="" />
     </div>
 
     <!-- Main Container -->
@@ -93,17 +99,15 @@
     <footer class="footer">
         <div class="footer-portion">
             <div class="footer-item social-icons-container">
-                <a target="_blank" class="social-icons" href="https://m.facebook.com/profile.php?id=100005082931407">
-                    <i class="fab fa-facebook social-icons hover"></i>
-                </a>
                 <a target="_blank" class="social-icons" href="https://www.instagram.com/falsoidolo/">
                     <i class="fab fa-instagram social-icons hover"></i>
                 </a>
                 <a target="_blank" class="social-icons"
-                    href="https://www.youtube.com/watch?v=UmITmLBT6eU&list=PLosfT0ruWWZh6luA3yMP7koenWXlfcoeu">
+                    href="https://www.youtube.com/playlist?list=PLosfT0ruWWZh6luA3yMP7koenWXlfcoeu">
                     <i class="fab fa-youtube social-icons hover"></i>
                 </a>
-                <a target="_blank" class="social-icons" href="">
+                <a target="_blank" class="social-icons"
+                    href="https://open.spotify.com/playlist/1d3if3a8Fn1Q02AeUIGcM4?si=f6879c356eae44af">
                     <i class="fab fa-spotify social-icons hover"></i>
                 </a>
             </div>
