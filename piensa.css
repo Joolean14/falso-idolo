@@ -229,6 +229,10 @@ p {
   margin: 10vw 0 0 3vw;
 }
 
+.statement {
+  width: 80vw;
+}
+
 /* Footer start */
 
 footer {
@@ -237,13 +241,6 @@ footer {
   justify-content: center;
   padding: 2vh;
   /* margin: 3.5% 0 4%; */
-}
-
-.leaf-back {
-  width: 6.5vw;
-  transform: rotate(100deg);
-  cursor: pointer;
-  margin: -1vh 10vw 0 13vw;
 }
 
 .footer-portion {
@@ -356,6 +353,7 @@ footer {
   .team-info {
     padding: 2vw 4vw 6vw 4vw;
     margin: 10px;
+    /* background-color: black; */
   }
 
   .team-info-title {
@@ -365,6 +363,7 @@ footer {
   .team-info-text {
     font-size: 2vw;
   }
+
 
   /* MAIN end */
 

@@ -64,6 +64,7 @@ body {
   top: 9%;
   left: 13%;
   opacity: 0.7;
+  border-radius: 50%;
   /* box-shadow: 5px 3px 6px rgb(106, 106, 106); */
 }
 
@@ -134,12 +135,12 @@ body {
 /* SCENE IMG */
 
 .scene-prop-item-a {
-  background-image: url(../images/piensa.png);
+  background-image: url(../images/recursos.png);
   z-index: -1;
 }
 
 .scene-prop-item-b {
-  background-image: url(../images/recursos.png);
+  background-image: url(../images/piensa.png);
   z-index: -1;
 }
 

@@ -41,6 +41,7 @@ p {
   top: 0%;
   left: 2%;
   opacity: 0.7;
+  border-radius: 50%;
   /* box-shadow: 5px 3px 6px rgb(106, 106, 106); */
   z-index: 999;
 
@@ -155,6 +156,10 @@ p {
 
 }
 
+.disabled {
+  opacity: 0.2;
+}
+
 .tooltip-home .tooltiptext {
   visibility: hidden;
   /* opacity: 75%; */
@@ -190,7 +195,7 @@ p {
 .tooltip-videos .tooltiptext {
   visibility: hidden;
   font-family: "DaisyWheel", sans-serif;
-  width: 63px;
+  width: 63px;:
   /* background-color: black; */
   color: #EABB42;
   text-align: center;
@@ -211,9 +216,9 @@ p {
   color: #EABB42;
   text-align: center;
   border-radius: 6px;
-  bottom: 145px;
+  bottom: 122px;
   line-height: 26px;
-  right: 132px;
+  right: 178px;
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
