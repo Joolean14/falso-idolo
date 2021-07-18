@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Peckham;
+  src: url(/assets/fonts/Peckham/Peckham\ Regular.otf);
+  /* font-weight: bold; */
+}
+
 html {
   background-color: black;
   overflow: hidden;
@@ -5,8 +11,8 @@ html {
 }
 
 body {
-  font-family: 'DaisyWheel', sans-serif;
-    
+  /* font-family: 'DaisyWheel', sans-serif; */
+  font-family: Peckham;    
 }
 
 .background-container {
@@ -375,7 +381,7 @@ a:hover {
   }
   
   .scene-title {  
-    font-size: 5vw;
+    font-size: 3vw;
     width: 50vw;
   }
 
