@@ -184,7 +184,7 @@ body {
   }
   
   .title {
-    font-size: 15vw;
+    font-size: 12vw;
     margin: 11% 0 0 8.8%;
     text-align: center;
   }
@@ -244,8 +244,12 @@ body {
 
 }
 
+.title-with-animal {
+  display: flex;
+}
+
 .black-white-animal {
-    width: 50vw;
+    width: 20vw;
 }
 
 .iframe-container {
