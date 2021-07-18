@@ -1,9 +1,3 @@
-@font-face {
-  font-family: Peckham;
-  src: url(/assets/fonts/Peckham/Peckham\ Regular.otf);
-  /* font-weight: bold; */
-}
-
 html {
   background-color: black;
   overflow: hidden;
@@ -11,8 +5,8 @@ html {
 }
 
 body {
-  /* font-family: 'DaisyWheel', sans-serif; */
-  font-family: Peckham;    
+  font-family: 'DaisyWheel', sans-serif !important;
+  /* font-family: Peckham;     */
 }
 
 .background-container {

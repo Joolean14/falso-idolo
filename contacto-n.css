@@ -1,7 +1,7 @@
 body {
   color: #faf4d6;
   background: black;
-  /* font-family: "DaisyWheel", sans-serif; */
+  font-family: "DaisyWheel", sans-serif;
   align-items: center;
   margin: 0%;
 }
@@ -174,7 +174,7 @@ body {
   align-items: center;
   /* margin: 36.5vh 0 0; */
   margin: -2% 0 0 0;
-  /* font-family: 'DaisyWheel', sans-serif; */
+  font-family: 'DaisyWheel', sans-serif;
   /*  border: blue solid 2px  */
 }
 
@@ -539,7 +539,7 @@ footer {
     width: 81%;
     align-items: center;
     margin: -2% 0 0 0;
-    /* font-family: 'DaisyWheel', sans-serif; */
+    font-family: 'DaisyWheel', sans-serif;
   }
 
   .form-control.success input {
