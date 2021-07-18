@@ -162,7 +162,7 @@
 
 .tooltip-buscame .tooltiptext {
     visibility: hidden;
-    font-family: "DaisyWheel", sans-serif;
+    /* font-family: "DaisyWheel", sans-serif; */
     width: 65px;
     /* background-color: black; */
     color: #EABB42;
@@ -178,7 +178,7 @@
 
 .tooltip-videos .tooltiptext {
     visibility: hidden;
-    font-family: "DaisyWheel", sans-serif;
+    /* font-family: "DaisyWheel", sans-serif; */
     width: 63px;
     /* background-color: black; */
     color: #EABB42;
@@ -194,7 +194,7 @@
 
 .tooltip-newsletter .tooltiptext {
     visibility: hidden;
-    font-family: "DaisyWheel", sans-serif;
+    /* font-family: "DaisyWheel", sans-serif; */
     width: 77px;
     /* background-color: black; */
     color: #EABB42;
@@ -210,7 +210,7 @@
 
 .tooltip-medios .tooltiptext {
     visibility: hidden;
-    font-family: "DaisyWheel", sans-serif;
+    /* font-family: "DaisyWheel", sans-serif; */
     width: 55px;
     /* background-color: black; */
     color: #EABB42;
@@ -227,7 +227,7 @@
 
 .tooltip-contacto .tooltiptext {
     visibility: hidden;
-    font-family: "DaisyWheel", sans-serif;
+    /* font-family: "DaisyWheel", sans-serif; */
     width: 66px;
     /* background-color: black; */
     color: #EABB42;

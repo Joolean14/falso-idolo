@@ -1,7 +1,7 @@
 body {
   color: #faf4d6;
   background: black;
-  font-family: "DaisyWheel", sans-serif;
+  /* font-family: "DaisyWheel", sans-serif; */
   align-items: center;
   margin: 0%;
 }
@@ -172,7 +172,7 @@ p {
 
 .tooltip-buscame .tooltiptext {
   visibility: hidden;
-  font-family: "DaisyWheel", sans-serif;
+  /* font-family: "DaisyWheel", sans-serif; */
   width: 65px;
   /* background-color: black; */
   color: #EABB42;
@@ -188,7 +188,7 @@ p {
 
 .tooltip-videos .tooltiptext {
   visibility: hidden;
-  font-family: "DaisyWheel", sans-serif;
+  /* font-family: "DaisyWheel", sans-serif; */
   width: 63px;
   /* background-color: black; */
   color: #EABB42;
@@ -204,7 +204,7 @@ p {
 
 .tooltip-newsletter .tooltiptext {
   visibility: hidden;
-  font-family: "DaisyWheel", sans-serif;
+  /* font-family: "DaisyWheel", sans-serif; */
   width: 77px;
   /* background-color: black; */
   color: #EABB42;
@@ -220,7 +220,7 @@ p {
 
 .tooltip-medios .tooltiptext {
   visibility: hidden;
-  font-family: "DaisyWheel", sans-serif;
+  /* font-family: "DaisyWheel", sans-serif; */
   width: 55px;
   /* background-color: black; */
   color: #EABB42;
@@ -237,7 +237,7 @@ p {
 
 .tooltip-contacto .tooltiptext {
   visibility: hidden;
-  font-family: "DaisyWheel", sans-serif;
+  /* font-family: "DaisyWheel", sans-serif; */
   width: 66px;
   /* background-color: black; */
   color: #EABB42;
