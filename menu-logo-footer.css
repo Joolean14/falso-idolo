@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Peckham;
+    src: url(/assets/fonts/Peckham/Peckham\ Regular.otf);
+    /* font-weight: bold; */
+  }
+
+  body {
+      font-family: Peckham !important;
+  }
+
 /* LOGO */
 
 .sticky-logo {
