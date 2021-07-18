@@ -8,16 +8,54 @@
     <link rel="shortcut icon" href="assets/images/favicon-logo.png" type="image/x-icon" />
     <link href="https://fonts.cdnfonts.com/css/daisy-wheel" rel="stylesheet" />
     <link rel="stylesheet" href="produccion-musical.css" />
+    <link rel="stylesheet" href="menu-logo-footer.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 
 <body>
-    <h1 class="title">Producción Musical</h1>
-
     <div class="sticky-logo">
+        <a href="index.html">
+            <img class="logo" src="assets/images/falso-idolo-logo.png" alt="">
+        </a>
         <img class="indigena" src="assets/images/servicios.png" alt="" />
     </div>
+    <h1 class="title">Producción Musical</h1>
+     <!-- CIRCULAR MENU -->
+     <div id="circularMenu" class="circular-menu">
+        <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+            <div class="circular-menu-plus">
+                <i class="fa fa-plus"></i>
+            </div>
+        </a>
+        <menu class="items-wrapper">
+            <a href="artistas-n.html" class="menu-item tooltip-buscame">
+                <img class="menu-mini-img" src="assets/images/piensa.png" alt="">
+                <span class="tooltiptext">Artistas</span>
+            </a>
+            <a href="produccion-musical.html" class="menu-item tooltip-videos">
+                <img class="menu-mini-img" src="assets/images/servicios.png" alt="">
+                <span class="tooltiptext">Producción Musical</span>
+            </a>
+            <a href="piensa.html" class="menu-item tooltip-medios">
+                <img class="menu-mini-img" src="assets/images/recursos.png" alt="">
+                <span class="tooltiptext">Piensa</span>
+            </a>
+            <a class="menu-item tooltip-newsletter">
+                <img class="menu-mini-img disabled" src="assets/images/noticias.png" alt="">
+                <span class="tooltiptext">En construcción</span>
+            </a>
+            <a href="contacto-n.html" class="menu-item tooltip-contacto">
+                <img class="menu-mini-img" src="assets/images/contacto.png" alt="">
+                <span class="tooltiptext">Contacto</span>
+            </a>
+            <!-- <a href="" class="menu-item tooltip-home">
+                    <img class="menu-mini-img" src="assets/images/contacto.png" alt=""> 
+                    <span class="tooltiptext">Home</span>
+                </a> -->
+        </menu>
+    </div>
 
+   
     <!-- Main Container -->
     <div class="main-container">
         <div class="service-container">
@@ -57,17 +95,15 @@
     <footer class="footer">
         <div class="footer-portion">
             <div class="footer-item social-icons-container">
-                <a target="_blank" class="social-icons" href="https://m.facebook.com/profile.php?id=100005082931407">
-                    <i class="fab fa-facebook social-icons hover"></i>
-                </a>
                 <a target="_blank" class="social-icons" href="https://www.instagram.com/falsoidolo/">
                     <i class="fab fa-instagram social-icons hover"></i>
                 </a>
                 <a target="_blank" class="social-icons"
-                    href="https://www.youtube.com/watch?v=UmITmLBT6eU&list=PLosfT0ruWWZh6luA3yMP7koenWXlfcoeu">
+                    href="https://www.youtube.com/playlist?list=PLosfT0ruWWZh6luA3yMP7koenWXlfcoeu">
                     <i class="fab fa-youtube social-icons hover"></i>
                 </a>
-                <a target="_blank" class="social-icons" href="">
+                <a target="_blank" class="social-icons"
+                    href="https://open.spotify.com/playlist/2ftlGcxzs8tuL6OREKkRCF?si=dojhz1POTQKf7vALfgDsrg&utm_source=whatsapp">
                     <i class="fab fa-spotify social-icons hover"></i>
                 </a>
             </div>
