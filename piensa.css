@@ -6,7 +6,7 @@ body {
   margin: 0%;
 }
 
-/* Circular menu start */
+/* Circular menu start =========================================================================================== */
 
 .circular-menu {
   position: fixed;
@@ -165,7 +165,7 @@ body {
   transform: translate3d(0em, 8em, 0);
 }
 
-/* Circular menu end */
+/* Circular menu end  ================================================================================= */
 
 .sticky-logo {
   position: fixed;
@@ -211,6 +211,11 @@ p {
   position: absolute;
   z-index: -1;
   margin: 0 0 0 0;
+  opacity: 0.5
+}
+
+.team-info {
+  padding: 2vw 9vw 6vw 9vw;
 }
 
 .indigena-container {
@@ -291,6 +296,10 @@ footer {
     width: 3.8vw;
   }
   /* Circular menu end */
+
+  .team-info {
+    padding: 2vw 12vw 6vw 12vw;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -351,8 +360,9 @@ footer {
 
   /* MAIN */
   .team-info {
-    padding: 2vw 4vw 6vw 4vw;
+    padding: 2vw 8vw 6vw 8vw;
     margin: 10px;
+    text-shadow: 2px 2px black;
     /* background-color: black; */
   }
 
@@ -361,7 +371,7 @@ footer {
   }
 
   .team-info-text {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
 
 
