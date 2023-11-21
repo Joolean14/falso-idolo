@@ -130,7 +130,7 @@ body {
 }
 
 .scene-prop-item-c {
-  background-image: url(../images/introduce.png);
+  background-image: url(../images/logo-en-la-musica-hay-verdad.png);
   z-index: -1;
 }
 
@@ -384,7 +384,7 @@ a:hover {
   left: 52%;
 }
   .guacamaya {
-    width: 43%;
+    width: 33%;
     top: 39%;
   }
 
